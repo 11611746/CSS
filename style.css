@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Share:wght@700&display=swap');                    /*this will import google fonts in our website*/
+i@import url('https://fonts.googleapis.com/css2?family=Share:wght@700&display=swap');                    /*this will import google fonts in our website*/
 
 
 /* '*' -> universal operator*/
@@ -7,6 +7,7 @@
     padding: 0;                                 /*this will remove the white space from the four edges*/
 }
 
+/*Background Properties*/
 /*For Class we use '.' dot operator*/
 .bg{
     width: 100%;                                /*this will assign the width of the div, 100% -> entire screen width which is visible to us*/                   
@@ -20,6 +21,8 @@
 
 }
 
+
+/*Font Properties*/
 /*For Id we use '#' operator*/
 #heading2{
     color: #fff;
@@ -30,6 +33,8 @@
     font-weight: bolder;                        /*this will apply different weight to the text. eg- bold,bolder,light etc it also takes number from 100-900.*/
 }
 
+
+/*Text Properties*/
 #para{
     font-family: 'Share', cursive;
     color: #fff;                              /*it is a property of text which apply's colour to text*/
@@ -41,6 +46,8 @@
     text-transform: capitalize;                 /*it transform the text like uppercase,lowercase etc. and it is aproperty of text*/
 }
 
+
+/*Link Properties*/
 /*unvisited link*/
 a:link{
     letter-spacing: 5px;
@@ -68,7 +75,7 @@ a:active{
     color: #848ccf;
 }
 
-
+/*Border Properties*/
 .borderDiv{
     width: 300px;
     height: 300px;
@@ -78,4 +85,37 @@ a:active{
     border-style: solid; */                         /*this is used to give the style in the border eg: solid,dashed,dotted etc*/
     border: 10px solid #000;
     border-radius: 50px;                            /*this is used to give the rounded corners*/
+}
+
+
+/*OL and UL Properties*/
+/*if you are using 'margin:0; padding:0' in the global operator than yoy will not see the list marker*/
+ul{
+    color: #fff;
+    font-size: 2rem;
+    list-style-type: square;                        /*this will change the appearance of the 'ul' marker*/
+}
+
+ol{
+    color: #fff;
+    font-size: 2rem;
+    list-style-type: lower-alpha;                   /*this will change the appearance of the 'ol' marker*/
+}
+
+
+/*Box Model Properties*/
+label{
+    font-size: 2rem;
+    color: #fddb3a;
+}
+.boxModel{
+    width: 400px;
+    height: 100px;
+    background-color: #dd2c00;
+    padding: 50px;                                  /*this will apply the space between the inner content and the box*/
+    margin: 50px;                                   /*this will apply space between outer content and box*/
+}
+input{
+    padding: 10px 10px 10px 10px;                   /*apply padding to : top -> right -> bottom -> left*/
+    margin: 10px 10px 10px 10px;                    /*apply margin to : top -> right -> bottom -> left*/
 }
