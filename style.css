@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Share:wght@700&display=swap');                    /*this will import google fonts in our website*/
+
+
+/* '*' -> universal operator*/
+*{
+    margin: 0;                                  /*this will remove the margin from the four edges*/
+    padding: 0;                                 /*this will remove the white space from the four edges*/
+}
+
+/*For Class we use '.' dot operator*/
+.bg{
+    width: 100%;                                /*this will assign the width of the div, 100% -> entire screen width which is visible to us*/                   
+    height: 100vh;                              /*this will assign the height of the div, 'vh' - view height and 100vh -> entire screen height which is visible to us*/
+    /* background-color: #30475e;               this will apply background colour to the entire div */
+    background-image: url('images/img2.jpg');   /*this will apply background image to the entire div*/
+    background-repeat: no-repeat;               /*this will stop repeating the image horizontally and vertically*/
+    /* background-repeat: repeat-x;                this will repeat the image horizontally */
+    background-size: 100% 100%;                 /*it will make the image display centered and it is a property of css3*/
+    background-attachment: fixed;               /*thi will fix the image in the background. eg- parallex effect*/
+
+}
+
+/*For Id we use '#' operator*/
+#heading2{
+    color: #fff;
+    font-family: 'Share', cursive;              /*this will apply font to our text*/
+    font-variant: small-caps;
+    font-size: 3em;                             /*this will apply size to the font, we can give in px,em,rem. 1em=16px*/
+    font-style: italic;                         /*this will apply style to the text*/
+    font-weight: bolder;                        /*this will apply different weight to the text. eg- bold,bolder,light etc it also takes number from 100-900.*/
+}
+
+#para{
+    font-family: 'Share', cursive;
+    color: #fff;                              /*it is a property of text which apply's colour to text*/
+    letter-spacing: 5px;                        /*it apply space between two characters in a word and it is a property of text*/
+    word-spacing: 5px;                          /*it apply space between two words and it is aproperty of text*/
+    direction: ltr;                             /*it specifies the direction of the text. 'ltr' -> left to right, 'rtl' -> right to left and it is aproperty of text*/
+    text-indent: 20px;                          /*it applies an extra space in the begnning of the text depending upon the direction of the text and it is aproperty of text*/
+    /* text-align: left;                           it is somehow similar to text 'direction' property and it is aproperty of text*/
+    text-transform: capitalize;                 /*it transform the text like uppercase,lowercase etc. and it is aproperty of text*/
+}
+
+/*unvisited link*/
+a:link{
+    letter-spacing: 5px;
+    font-size: 2rem;
+    color: #fddb3a;
+}
+
+/*visited link*/
+a:visited{
+    letter-spacing: 5px;
+    font-size: 2rem;
+    color: #dd2c00;
+}
+
+/*mouse hover*/
+a:hover{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+/*selected link*/
+a:active{
+    letter-spacing: 5px;
+    font-size: 2rem;
+    color: #848ccf;
+}
+
+
+.borderDiv{
+    width: 300px;
+    height: 300px;
+    background-color: #848ccf;
+    /* border-width: 5px;                             this is used to give the border width
+    border-color: #000;                               this is used to give the border colour
+    border-style: solid; */                         /*this is used to give the style in the border eg: solid,dashed,dotted etc*/
+    border: 10px solid #000;
+    border-radius: 50px;                            /*this is used to give the rounded corners*/
+}
