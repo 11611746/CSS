@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Margin class -->
+    <!-- 
+        m-auto      ===     bring the column in center
+        ml-auto     ===     margin left auto
+
+        margin auto classes break point(m-xl-auto,m-lg-auto,m-md-auto,m-sm-auto) and gives margin from all the four sides
+
+        margin classes for different sides
+        margin          ===     m-*
+        margin-right    ===     mr-*
+        margin-left     ===     ml-*
+        margin-top      ===     mt-*
+        margin-bottom   ===     mb-*
+
+        *   ===     0-5
+        0   ===     0px
+        1   ===     0.25rem
+        2   ===     0.50rem
+        3   ===     1rem
+        4   ===     1.5rem
+        5   ===     3rem
+
+        you can add break point in all the sides
+        eg- m-xl-*,mr-xl-*,ml-xl-*,mt-xl-*,mb-xl-*
+
+        *   ===     0-5
+
+        negative margin classes for differnt break points
+        m-xl-n*,mr-xl-n*,ml-xl-n*,mt-xl-n*,mb-xl-n*
+        m-lg-n*,mr-lg-n*,ml-lg-n*,mt-lg-n*,mb-lg-n*
+        m-md-n*,mr-md-n*,ml-md-n*,mt-md-n*,mb-md-n*
+        m-sm-n*,mr-sm-n*,ml-sm-n*,mt-sm-n*,mb-sm-n*
+
+        *   ===     0-5
+     -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3  m-lg-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusamus sunt, molestiae voluptate dolorem fugiat quod. Harum ad totam eum.
+            </div>
+            <div class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, praesentium.</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusamus sunt,
+                molestiae voluptate dolorem fugiat quod. Harum ad totam eum.
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" style="background-color: aquamarine;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusamus sunt,
+                    molestiae voluptate dolorem fugiat quod. Harum ad totam eum.
+                </div>
+                <div class="col-md-4 ml-md-n5 mt-md-5" style="background-color: blueviolet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, praesentium.</div>
+            </div>
+        </div>
+</body>
+</html>

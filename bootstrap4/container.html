@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container, Row and Col class-->
+    <!-- 
+        How to make website layout with bootstrap?
+        3 Bootstrap Css Classes
+            >container
+            >row
+            >col
+
+        .container === set width 1140px, page center (used for fixed layout and it is Responsive)
+        .container-fluid === set width 100% (used for liquid layout)
+        Container Break points(Extra Large,Large,Medium,Small,Extra Small)
+        Extra Large     ===     >=1200px    ===     1140px
+        Large           ===     >=992px     ===     960px
+        Medium          ===     >=768px     ===     720px
+        Small           ===     >=576px     ===     540px
+        Extra Small     ===     <576px      ===     Auto
+
+        .row
+            >.row row-cols-(number of columns eg-3)   this will add exactly two columns inside a row
+
+        .col
+            >.w-100  this will break the existing column and add into the next line
+        
+        Col Break points(col-xl,col-lg,col-md,col-sm)
+            >.col-md    if the device width is smaller than medium than the column will get the 100% width
+     -->
+
+     <div class="container">
+         <div class="row">
+            <div class="col-md">Col1</div>
+            <div class="col-md">Col2</div>
+            <div class="col-md">Col3</div>
+            <div class="col-md">Col4</div>
+         </div>
+         <div class="row">Row2</div>
+     </div>
+
+
+    <!-- Grid System -->
+    <!-- 
+        In bootstrap we have 1-12 grid
+        col-1,col-2,col-3...col-12
+        In a row if you are creating 3 column than their sum must be 12 or less than 12. If the sum is more than 12 than than the last column will come down automatically
+        eg- col4+col5 = 9     used two column
+        eg- col3+col9+col3 = 12     used three column
+        eg- col4+col6+col4 = 14     used three colun, but the last column will come down
+
+        Col Break points(col-xl-*,col-lg-*,col-md-*,col-sm-*)
+        * === 1-12
+     -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md">Col1</div>
+                <div class="col-md">Col2</div>
+                <div class="col-md">Col3</div>
+                <div class="col-md">Col4</div>
+            </div>
+            <div class="row">Row2</div>
+        </div>
+
+
+</body>
+</html>
