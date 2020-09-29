@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Vertical Alignment -->
+    <!-- 
+        In bootstrap we have three vertical alignments
+        (align-items,align-content,align-self)
+
+        It is used in .row class
+        
+        align-self-start
+        align-self-end
+        align-self-center
+        align-self-baseline
+        align-self-auto         this will work with respect to parent
+        align-self-stretch(by default)
+
+        align-items classes for different break points
+
+        start
+            >align-self-xl-start
+            >align-self-lg-start
+            >align-self-md-start
+            >align-self-sm-start
+
+        end
+            >align-self-xl-end
+            >align-self-lg-end
+            >align-self-md-end
+            >align-self-sm-end
+
+        center
+            >align-self-xl-center
+            >align-self-lg-center
+            >align-self-md-center
+            >align-self-sm-center
+                
+        baseline
+            >align-self-xl-baseline
+            >align-self-lg-baseline
+            >align-self-md-baseline
+            >align-self-sm-baseline
+
+        auto
+            >align-self-xl-auto
+            >align-self-lg-auto
+            >align-self-md-auto
+            >align-self-sm-auto
+        
+     -->
+
+    <div class="container">
+        <div class="row" style="height: 400px;">
+            <div class="col-md-3" style="background-color: antiquewhite;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Minima, necessitatibus?</div>
+            <div class="col-md-6 align-self-md-end align-self-lg-start" style="background-color: aquamarine;">Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Odio aliquid voluptate consectetur assumenda esse aperiam ipsam facere maiores
+                perferendis maxime?</div>
+            <div class="col-md-2" style="background-color: pink;">Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

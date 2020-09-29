@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Display Utilities -->
+    <!-- 
+        d-none
+        d-inline
+        d-inlin-block
+        d-block
+        d-table
+        d-table-cell
+        d-tabel-row
+        d-flex
+        d-inline-flex
+        
+        display class break points
+
+        d-none
+            >d-xl-none
+            >d-lg-none
+            >d-md-none
+            >d-sm-none
+            >d-none
+     -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 p-3" style="background-color: blue;">
+                <h1>Col A</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, exercitationem.</p>
+            </div>
+            <div class="col-md-3 p-3 d-sm-none" style="background-color: aqua;">
+                <h1>Col B</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-3 p-3" style="background-color: yellowgreen;">
+                <h1>Col C</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, exercitationem.</p>
+            </div>
+            <div class="col-md-3 p-3" style="background-color: red;">
+                <h1>Col D</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex flex-md-column">
+            <div class="p-3" style="background-color: yellowgreen;">Col A</div>
+            <div class="p-3" style="background-color: green;">Col B</div>
+            <div class="p-3" style="background-color: red;">Col C</div>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="d-flex">
+                <div class="p-3 order-3" style="background-color: yellowgreen;">Col A</div>
+                <div class="p-3 order-1" style="background-color: green;">Col B</div>
+                <div class="p-3 order-2" style="background-color: red;">Col C</div>
+            </div>
+        </div>
+
+    <!-- Display Print Utilities -->
+    <!-- 
+            d-print-none
+            d-print-inline
+            d-print-inlin-block
+            d-print-block
+            d-print-table
+            d-print-table-cell
+            d-print-tabel-row
+            d-print-flex
+            d-print-inline-flex
+            
+            display class break points
+    
+            d-none
+                >d-xl-none
+                >d-lg-none
+                >d-md-none
+                >d-sm-none
+                >d-none
+         -->
+
+        <div class="container">
+            <div class="d-flex flex-column">
+                <div class="p-3" style="background-color: yellowgreen;">Col A</div>
+                <div class="p-3 d-none d-print-block" style="background-color: green;">Col B</div>
+                <div class="p-3" style="background-color: red;">Col C</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="d-flex flex-row">
+                <div class="p-3" style="background-color: yellowgreen;">Col A</div>
+                <div class="p-3 d-print-none" style="background-color: green;">Col B</div>
+                <div class="p-3 d-print-none" style="background-color: red;">Col C</div>
+            </div>
+        </div>
+</body>
+
+</html>
