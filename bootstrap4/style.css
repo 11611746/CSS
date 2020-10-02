@@ -2,13 +2,13 @@
     border: 2px solid black;
 }
 
-.row{
+/* .row{
     border: 3px solid rebeccapurple;
 }
 
 .col{
     border: 2px solid red;
-}
+} */
 
 /* body{
     background-color: grey;
@@ -43,4 +43,18 @@
 
 #footer{
     background-color: orange;
+} */
+
+/* .nav{
+    background: #2c3e50;
+}
+
+.nav-link{
+    color: #000;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    background: #34495e;
+    color: #ffffff;
 } */

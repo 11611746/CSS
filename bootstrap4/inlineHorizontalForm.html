@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Inline & Horizontal Form Classes -->
+    <!-- 
+        form-inline
+        form-group
+        sr-only
+
+        .form-row
+        
+     -->
+
+     <!-- inline form -->
+     <div class="container">
+         <h2 class="py-3 text-center">Inline & Horizontal Form Classes</h2>
+         <div class="row py-3">
+             <div class="col-sm-12">
+                 <form action="" class="form-inline">
+                     <div class="form-group">
+                         <label class="sr-only">User Name</label>
+                         <input type="text" class="form-control" placeholder="username">
+                     </div>
+                    <div class="form-group mx-sm-3">
+                        <label class="sr-only">User Password</label>
+                        <input type="password" class="form-control" placeholder="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                 </form>
+             </div>
+         </div>
+
+        <form class="form-row py-3">
+            <div class="col-md-4 my-2">
+                <label class="sr-only">User Name</label>
+                <input type="text" class="form-control" placeholder="username">
+            </div>
+            <div class="col-md-4 my-2">
+                <label class="sr-only">User Password</label>
+                <input type="password" class="form-control" placeholder="password">
+            </div>
+            <div class="col-md-4 my-2">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>                            
+        </form>
+
+        <!-- inline checkbox -->
+        <div class="row">
+            <div class="col py-3">
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" id="musicCheck">
+                    <label for="musicCheck" class="form-check-label">Music</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" id="sportCheck">
+                    <label for="sportCheck" class="form-check-label">Sport</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" id="paintCheck" disabled>
+                    <label for="paintCheck" class="form-check-label">Painting</label>
+                </div>
+            </div>
+        </div>
+        
+        <!-- inline radiobutton -->
+        <div class="row">
+            <div class="col py-3">
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="musicRadio" name="radioR">
+                    <label for="musicRadio" class="form-check-label">Music</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="sportRadio" name="radioR">
+                    <label for="sportRadio" class="form-check-label">Sport</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="paintRadio" name="radioR" disabled>
+                    <label for="paintRadio" class="form-check-label">Painting</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizontal -->
+        <div class="row">
+            <div class="col">
+                <form action="">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg">
+                            User Name
+                        </label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control form-control-lg">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label col-form-label-sm">
+                            Password
+                        </label>
+                        <div class="col-sm-5">
+                            <input type="password" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+     </div>
+</body>
+
+</html>
