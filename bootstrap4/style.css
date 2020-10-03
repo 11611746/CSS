@@ -58,3 +58,8 @@
     background: #34495e;
     color: #ffffff;
 } */
+
+#second-jumbo{
+    background: url("../Overview/images/img2.jpg") no-repeat;
+    background-size: cover;
+}
