@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    
+    <script>
+        $(function(){
+            $('#myTab a').on('click',function(e){
+                e.preventDefault();
+                $(this).tab('show');
+            })
+
+            $('#myTab a').on('show.bs.tab', function (e) {
+                //e.preventDefault();
+                console.log(e.target);
+                console.log(e.relatedTarget);
+                alert('show');
+            })
+            $('#myTab a').on('shown.bs.tab', function (e) {
+                //e.preventDefault();
+                alert('shown');
+            })
+            $('#myTab a').on('hide.bs.tab', function (e) {
+                //e.preventDefault();
+                alert('hide');
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="container mb-5">
+        <h2 class="py-3 text-center">Collapse & Accordion</h2>
+        <div class="row py-5">
+            <div class="col-md-6">
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="nav-items">
+                        <a href="#home" class="nav-link active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#about" class="nav-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#profile" class="nav-link">
+                            Profile
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content py-3" id="myTabContent">
+                    <div class="tab-pane show active fade" id="home">
+                        <h4 class="display-4">Home</h4>
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum quas rem quis, labore voluptatibus officia inventore nam quo facilis ipsa est corporis animi voluptas laborum deserunt dignissimos blanditiis quaerat eum?</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h4 class="display-4">Profile</h4>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore accusamus dicta tempora laboriosam placeat? Mollitia quia ab laborum nam recusandae!</p>
+                    </div>
+                    <div class="tab-pane fade" id="about">
+                        <h4 class="display-4">About</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="nav nav-pills bg-dark" id="pillsTab">
+                    <li class="nav-items">
+                        <a href="#homeP" class="nav-link active" data-toggle="pill">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#aboutP" class="nav-link" data-toggle="pill">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#profileP" class="nav-link" data-toggle="pill">
+                            Profile
+                        </a>
+                    </li>
+                </ul>
+            
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane show active fade bg-dark text-light p-3" id="homeP">
+                        <h4 class="display-4">Home</h4>
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum quas rem quis, labore
+                            voluptatibus officia inventore nam quo facilis ipsa est corporis animi voluptas laborum deserunt
+                            dignissimos blanditiis quaerat eum?</p>
+                    </div>
+                    <div class="tab-pane fade bg-dark text-light p-3" id="profileP">
+                        <h4 class="display-4">Profile</h4>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore accusamus dicta tempora
+                            laboriosam placeat? Mollitia quia ab laborum nam recusandae!</p>
+                    </div>
+                    <div class="tab-pane fade bg-dark text-light p-3" id="aboutP">
+                        <h4 class="display-4">About</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-5">
+            <div class="col-3">
+                <ul class="nav nav-pills flex-column bg-dark" id="verticalTab">
+                    <li class="nav-items">
+                        <a href="#homePV" class="nav-link active" data-toggle="pill">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#aboutPV" class="nav-link" data-toggle="pill">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#profilePV" class="nav-link" data-toggle="pill">
+                            Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane show active fade bg-dark text-light p-3" id="homePV">
+                        <h4 class="display-4">Home</h4>
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum quas rem quis, labore
+                            voluptatibus officia inventore nam quo facilis ipsa est corporis animi voluptas laborum deserunt
+                            dignissimos blanditiis quaerat eum?</p>
+                    </div>
+                    <div class="tab-pane fade bg-dark text-light p-3" id="profilePV">
+                        <h4 class="display-4">Profile</h4>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore accusamus dicta tempora
+                            laboriosam placeat? Mollitia quia ab laborum nam recusandae!</p>
+                    </div>
+                    <div class="tab-pane fade bg-dark text-light p-3" id="aboutPV">
+                        <h4 class="display-4">About</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

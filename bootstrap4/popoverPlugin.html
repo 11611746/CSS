@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#top').popover({
+                html: true,
+                title: `Alert!!!`,
+                content: `Are you sure? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, obcaecati.<br><a href="" class="btn btn-primary mx-2 my-5">No</a><a href="" class="btn btn-danger mx-2 my-5">Yes</a>`,
+                placement: `bottom`,
+                //delay: {"show":1000,"hide":500}
+            });
+            $('#bottom').popover({
+                html: true
+            });
+
+            // $('#click').click(function(){
+            //     $('#bottom').popover('show');
+            // });
+            // $('#click').click(function () {
+            //     $('#bottom').popover('hide');
+            // });
+            // $('#click').click(function () {
+            //     $('#bottom').popover('toggle');
+            // });
+            // $('#click').click(function () {
+            //     $('#bottom').popover('disable');
+            // });
+            // $('#click').click(function () {
+            //     $('#bottom').popover('enable');
+            // });
+            // $('#click').click(function () {
+            //     $('#bottom').popover('toggleEnabled');
+            // });
+            // $('#click').click(function () {
+            //     $('#bottom').popover('dispose');
+            // });
+
+            $('#bottom').on('show.bs.popover',function () {
+                alert('show');
+            });
+            $('#bottom').on('shown.bs.popover',function () {
+                alert('shown');
+            });
+            $('#bottom').on('inserted.bs.popover',function () {
+                alert('inserted');
+            });
+            $('#bottom').on('hide.bs.popover',function () {
+                alert('hide');
+            });
+            $('#bottom').on('hidden.bs.popover',function () {
+                alert('hidden');
+            });
+            
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="container mb-5">
+        <h2 class="py-3 text-center">Tooltip</h2>
+        <div class="row py-5">
+            <div class="col-md-7 d-flex justify-content-center">
+                <button class="btn btn-primary" id="top">
+                    popover
+                </button>
+                <button class="btn btn-primary mx-3" data-placement="bottom" data-toggle="popover" id="bottom" title="Title" data-content="<h3>popover text goes here!!!</h3>">
+                    popover
+                </button>
+                <button id="click" class="btn btn-warning">click</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

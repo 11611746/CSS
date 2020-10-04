@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .accordion .btn{
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .accordion .card-header .btn.collapsed{
+            background: #808080;
+            color: aliceblue;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#newBtn').click(function(){
+                $('#collapseOne').collapse('toggle');
+            })
+            // $('#newBtn').click(function () {
+            //     $('#collapseOne').collapse('show');
+            // })
+            // $('#newBtn').click(function () {
+            //     $('#collapseOne').collapse('hide');
+            // })
+            // $('#newBtn').click(function () {
+            //     $('#collapseOne').collapse('dispose');
+            // })
+
+            //events
+            $('#collapseOne').on('show.bs.collapse',function () {
+                alert('show');
+            })
+            $('#collapseOne').on('shown.bs.collapse', function () {
+                alert('shown');
+            })
+            $('#collapseOne').on('hide.bs.collapse', function () {
+                alert('hide');
+            })
+            $('#collapseOne').on('hidden.bs.collapse', function () {
+                alert('hidden');
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="container mb-5">
+        <h2 class="py-3 text-center">Collapse & Accordion</h2>
+        <div class="row py-5">
+            <div class="col-md-7 mb-5">
+                <div class="card">
+                    <div class="card-header bg-primary">
+                        <button class="btn btn-block btn-link text-left text-white" id="newBtn" style="text-decoration: none; font-size: 1.5rem;">Final V2</button>
+                    </div>
+                    <div id="collapseOne" class="collapse">
+                        <div class="card-body bg-dark text-light lead">
+                            <h4 class="dispaly-4">Tittle</h4>
+                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque facere quod itaque
+                            incidunt placeat voluptatibus nobis ex atque, odio rerum reprehenderit?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 mb-5">
+                <button class="btn btn-primary mb-3" data-toggle="collapse" data-target="#myCollapse">Click</button>
+
+                <!-- <a href="#" class="btn btn-secondary mb-3" data-toggle="collapse" data-target="#myCollapse">Open Link</a> -->
+
+                <div id="myCollapse" class="collapse">
+                    <div class="card card-body">
+                        <h4 class="dispaly-4">Tittle</h4>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque facere quod itaque incidunt placeat voluptatibus nobis ex atque, odio rerum reprehenderit? Sed aspernatur dolorem quis? Aliquam quia temporibus sequi.</p>
+                    </div>
+                </div>
+                <!-- <div id="myCollapse" class="collapse mb-3">
+                    <div class="card card-body">
+                        <h4 class="dispaly-4">Tittle</h4>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque facere quod itaque
+                            incidunt placeat voluptatibus nobis ex atque, odio rerum reprehenderit? Sed aspernatur dolorem quis? Aliquam
+                            quia temporibus sequi.</p>
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="col-md-7">
+                <div class="accordion" id="accordionExample">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-block btn-link text-left" data-toggle="collapse" data-target="#collapse-One">Alpha-1</button>
+                        </div>
+                        <div id="collapse-One" class="collapse show" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h4 class="dispaly-4">Tittle</h4>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque facere quod itaque
+                                    incidunt placeat voluptatibus nobis ex atque, odio rerum reprehenderit? Sed aspernatur dolorem quis? Aliquam
+                                    quia temporibus sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas voluptatibus magnam similique sit autem saepe, nemo perferendis totam. Eveniet quibusdam eum odit commodi deleniti necessitatibus ut placeat corporis quo tempora consequuntur dignissimos, quidem magnam sunt! Incidunt, similique culpa? Repellendus enim nihil, explicabo corporis omnis ipsum molestiae id distinctio facilis commodi debitis reiciendis nemo eaque, non asperiores tenetur totam ex, exercitationem odit blanditiis ratione qui ad praesentium? Dolorum perferendis quae quod, voluptatum facere adipisci tempora autem tempore quas est quis!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-block btn-link text-left collapsed" data-toggle="collapse"
+                                data-target="#collapse-Tow">Alpha-2</button>
+                        </div>
+                        <div id="collapse-Tow" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h4 class="dispaly-4">Tittle</h4>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque facere quod itaque
+                                    incidunt placeat voluptatibus nobis ex atque, odio rerum reprehenderit? Sed aspernatur dolorem quis?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-block btn-link text-left collapsed" data-toggle="collapse"
+                                data-target="#collapse-Three">Beta-1</button>
+                        </div>
+                        <div id="collapse-Three" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h4 class="dispaly-4">Tittle</h4>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque facere quod itaque
+                                    incidunt placeat voluptatibus nobis ex atque, odio rerum reprehenderit? Sed aspernatur dolorem quis?
+                                    Aliquam
+                                    quia temporibus sequi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores facilis voluptas ab, in commodi voluptates quo aut, temporibus officia aliquid enim perferendis voluptate provident quas cupiditate exercitationem optio amet sapiente distinctio illo repellat. Nisi eum corporis labore voluptate nesciunt aspernatur maxime aliquid itaque qui expedita nihil dolorum libero, esse quisquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-block btn-link text-left collapsed" data-toggle="collapse"
+                                data-target="#collapse-Four">Final</button>
+                        </div>
+                        <div id="collapse-Four" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h4 class="dispaly-4">Tittle</h4>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque facere quod itaque
+                                    incidunt placeat voluptatibus nobis ex atque, odio rerum reprehenderit? Sed aspernatur dolorem quis?
+                                    Aliquam
+                                    quia temporibus sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse ab molestias itaque consequuntur architecto magni voluptates expedita aliquid qui, excepturi officia numquam eos eveniet iure deleniti vero nulla ipsam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
