@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#test').on('activate.bs.scrollspy',function(){
+               // alert('version');
+               $('#test').css({
+                   "background-color":"pink"
+               });
+               setTimeout(function(){
+                    $('#test').css({
+                       "background-color": ""
+                   });
+               },2000);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="py-3 tet-center">Scrollspy</h2>
+        <div class="row py-5 justify-content-center">
+            <div class="col-md-4">
+                <div class="list-group sticky-top" id="list-example">
+                    <a href="#list-item-1" class="list-group-item list-group-item-action">version 1.1</a>
+                    <a href="#list-item-2" class="list-group-item list-group-item-action">version 1.2</a>
+                    <a href="#list-item-3" class="list-group-item list-group-item-action">version 1.3</a>
+                    <a href="#list-item-4" class="list-group-item list-group-item-action">version 2.0</a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div data-spy="scroll" data-target="#list-example" data-offset="20" id="test" style="height: 500px;overflow: auto;">
+                    <h4 id="list-item-1" class="display-4">Version 1.1</h4>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur nobis consectetur illum? Eaque eum in veritatis dolorum quaerat rerum odio doloremque molestias nobis pariatur quasi omnis quis voluptates saepe nesciunt nihil deserunt, cupiditate vel, sunt corrupti earum consequatur expedita maiores. Voluptatem enim laboriosam pariatur voluptate, eligendi excepturi veritatis nisi, ea dolores impedit non! Ea fugiat maxime a voluptas, quae, ratione sit voluptatem deleniti perspiciatis recusandae asperiores dolores vero dignissimos nihil, tenetur harum eos alias odio! Assumenda mollitia illum eos iusto nostrum quidem eaque distinctio qui et vel expedita, perspiciatis animi ex accusantium architecto libero, cum suscipit nisi officia ut?</p>
+                    <h4 id="list-item-2" class="display-4">Version 1.2</h4>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur nobis consectetur illum?
+                        Eaque eum in veritatis dolorum quaerat rerum odio doloremque molestias nobis pariatur quasi omnis quis
+                        voluptates saepe nesciunt nihil deserunt, cupiditate vel, sunt corrupti earum consequatur expedita maiores.</p>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur nobis consectetur illum?
+                        Eaque eum in veritatis dolorum quaerat rerum odio doloremque molestias nobis pariatur quasi omnis quis
+                        voluptates saepe nesciunt nihil deserunt, cupiditate vel, sunt corrupti earum consequatur expedita maiores.</p>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur nobis consectetur illum?
+                        Eaque eum in veritatis dolorum quaerat rerum odio doloremque molestias nobis pariatur quasi omnis quis
+                        voluptates saepe nesciunt nihil deserunt, cupiditate vel, sunt corrupti earum consequatur expedita maiores.</p>
+                    <h4 id="list-item-3" class="display-4">Version 1.3</h4>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur nobis consectetur illum?
+                        Eaque eum in veritatis dolorum quaerat rerum odio doloremque molestias nobis pariatur quasi omnis quis
+                        voluptates saepe nesciunt nihil deserunt, cupiditate vel, sunt corrupti earum consequatur expedita maiores.</p>
+                    <h4 id="list-item-4" class="display-4">Version 2.0</h4>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur nobis consectetur illum?
+                        Eaque eum in veritatis dolorum quaerat rerum odio doloremque molestias nobis pariatur quasi omnis quis
+                        voluptates saepe nesciunt nihil deserunt, cupiditate vel, sunt corrupti earum consequatur expedita maiores.
+                        Voluptatem enim laboriosam pariatur voluptate, eligendi excepturi veritatis nisi, ea dolores impedit non! Ea
+                        fugiat maxime a voluptas, quae, ratione sit voluptatem deleniti perspiciatis recusandae asperiores dolores vero
+                        dignissimos nihil, tenetur harum eos alias odio! Assumenda mollitia illum eos iusto nostrum quidem eaque
+                        distinctio qui et vel expedita, perspiciatis animi ex accusantium architecto libero, cum suscipit nisi officia
+                        ut?</p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad similique sequi eos commodi eveniet architecto
+                        mollitia minima provident, temporibus culpa minus accusamus beatae. Rerum perferendis, asperiores, eveniet quas
+                        vitae ut perspiciatis minus quam exercitationem, cupiditate excepturi nemo sed incidunt harum. Magnam hic maxime
+                        veritatis rerum explicabo omnis soluta, itaque et sequi sapiente non totam dolores, consectetur inventore
+                        architecto! Nihil corrupti natus voluptatum quam. Itaque earum enim est sunt. Sint officiis consequuntur in
+                        natus accusamus iure nostrum expedita nihil est repellat delectus voluptas molestiae ipsa officia, tempore quae!
+                        Ducimus, quos laboriosam magnam voluptate, rem soluta architecto ea tempore, tempora nemo consequuntur!
+                    </p>
+                </div>                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
