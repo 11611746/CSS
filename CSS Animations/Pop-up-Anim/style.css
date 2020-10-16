@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.container {
+  width: 400px;
+  height: 200px;
+  background: rgb(97, 97, 97);
+  position: relative;
+  margin: 300px auto;
+  border-radius: 15px;
+  transform-origin: 10px 10px;
+  animation: popup 2s ease 1s 1 normal forwards, rotate 2s ease 3s 1 normal forwards;
+}
+
+input{
+    position: absolute;
+    border-radius: 10px;
+    padding: 10px;
+    top: 80px;
+    left: 90px;
+    text-align: center;
+    outline-style: none;
+    font-size: medium;
+    font-weight: 700;
+}
+
+@keyframes popup{
+    0%{top: -350px; opacity: 0;}
+    50%{top: 50px;}
+    100%{top: 0px; opacity: 1;}
+}
+
+@keyframes rotate{
+    0%{transform: rotateZ(0deg);}
+    40%{transform: rotateZ(55deg);}
+    80%{transform: rotateZ(-10deg);}
+    100%{transform: rotateZ(0deg);}
+}

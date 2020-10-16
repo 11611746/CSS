@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <div class="container header-container">
+      <h1>Demo Shopping</h1>
+      <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+    </div>
+    <div class="container body-container">
+      <div class="card">
+        <img
+          src="https://www.transparentpng.com/download/shirt/zBCERu-simple-black-t-shirt-transparent.png"
+          alt="bkack shirt"
+        />
+        <img
+          src="https://www.transparentpng.com/download/shirt/zBCERu-simple-black-t-shirt-transparent.png"
+          id="img1"
+          alt="bkack shirt"
+        />
+        <p class="g-name">Gents Tshirt (B)</p>
+        <p class="cost">&#8377; 450</p>
+        <button id="btn1" onclick="anime1()">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.transparentpng.com/download/shirt/BBeHa4-clothing-t-shirt-red-free-cut-out.png"
+          alt="red shirt"
+        />
+        <img
+          src="https://www.transparentpng.com/download/shirt/BBeHa4-clothing-t-shirt-red-free-cut-out.png"
+          id="img2"
+          alt="red shirt"
+        />
+        <p class="g-name">Gents Tshirt (R2)</p>
+        <p class="cost">&#8377; 699</p>
+        <button id="btn2" onclick="anime2()">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.transparentpng.com/download/t-shirt/1wbWcn-t-shirt-transparent-background.png"
+          alt="bkack shirt"
+        />
+        <img
+          src="https://www.transparentpng.com/download/t-shirt/1wbWcn-t-shirt-transparent-background.png"
+          id="img3"
+          alt="bkack shirt"
+        />
+        <p class="g-name">Gents Tshirt (LY)</p>
+        <p class="cost">&#8377; 400</p>
+        <button id="btn3" onclick="anime3()">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.transparentpng.com/download/t-shirt/mD03wQ-women-blue-t-shirt-icon-clipart.png"
+          alt="red shirt"
+        />
+        <img
+          src="https://www.transparentpng.com/download/t-shirt/mD03wQ-women-blue-t-shirt-icon-clipart.png"
+          id="img4"
+          alt="red shirt"
+        />
+        <p class="g-name">Gents Tshirt (BX)</p>
+        <p class="cost">&#8377; 490</p>
+        <button id="btn4" onclick="anime4()">Add to Cart</button>
+      </div>
+    </div>
+
+    <script>
+      function anime1() {
+        document.getElementById("img1").animate(
+          [
+            // keyframes
+            { transform: "translateX(0px)", opacity: "0" },
+            { transform: "translate(1658px,-158px)", height: "30px" },
+          ],
+          {
+            // timing options
+            duration: 2000,
+            timing: "ease-in-out",
+            delay: 300,
+            iterations: 1,
+            direction: "normal",
+            fill: "none"
+          }
+        );
+      }
+
+      function anime2() {
+        document.getElementById("img2").animate(
+          [
+            // keyframes
+            { transform: "translateX(0px)", opacity: "0" },
+            { transform: "translate(1227px,-158px)", height: "30px" },
+          ],
+          {
+            // timing options
+            duration: 2000,
+            timing: "ease-in-out",
+            delay: 300,
+            iterations: 1,
+            direction: "normal",
+            fill: "none"
+          }
+        );
+      }
+
+      function anime3() {
+        document.getElementById("img3").animate(
+          [
+            // keyframes
+            { transform: "translateX(0px)", opacity: "0" },
+            { transform: "translate(797px,-158px)" , height: "30px" },
+          ],
+          {
+            // timing options
+            duration: 1700,
+            timing: "ease-in-out",
+            delay: 300,
+            iterations: 1,
+            direction: "normal",
+            fill: "none"
+          }
+        );
+      }
+
+      function anime4() {
+        document.getElementById("img4").animate(
+          [
+            // keyframes
+            { transform: "translateX(0px)", opacity: "0" },
+            { transform: "translate(368px,-158px)", height: "30px" },
+          ],
+          {
+            // timing options
+            duration: 1500,
+            timing: "ease-in-out",
+            delay: 300,
+            iterations: 1,
+            direction: "normal",
+            fill: "none"
+          }
+        );
+      }
+    </script>
+  </body>
+</html>

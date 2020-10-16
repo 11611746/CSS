@@ -1,0 +1,103 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.sky {
+  width: 100%;
+  height: 40%;
+  box-sizing: border-box;
+  background: skyblue;
+  position: relative;
+}
+
+.cloud-img {
+  position: absolute;
+}
+
+.cloud-img:nth-child(1) {
+  width: 200px;
+  top: 90px;
+  opacity: 0.6;
+  animation: wind 50s linear 1s infinite reverse both;
+}
+
+.cloud-img:nth-child(2) {
+  width: 300px;
+  top: 0;
+  animation: wind 30s linear 2s infinite normal both;
+}
+
+@keyframes wind{
+  from{left: -350px}
+  to{left: 100%}
+}
+
+.grass {
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  background: yellowgreen;
+  position: relative;
+}
+
+.road {
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  background: gray;
+  border-top: 10px dashed rgb(68, 62, 62);
+  border-bottom: 10px dashed rgb(68, 62, 62);
+  position: relative;
+}
+
+.lines {
+  box-sizing: border-box;
+  border: 6px dashed rgb(250, 246, 246);
+  height: 0;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+}
+
+
+.mario {
+  width: 100px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  animation: drive 5s linear infinite normal both, 
+  jump 0.3s 2.4s 1 ease;
+}
+
+.mario2 {
+  width: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  animation-name: drive;
+  animation-duration: 7s;
+  /* animation-fill-mode: forwards; */
+  /* animation-fill-mode: backwards; */
+  animation-fill-mode: both;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes drive{
+  /* from{transform: translateX(0);} */
+  /* from{transform: translateX(500px);} */
+  from{transform: translateX(10px);}
+  to{transform: translateX(1900px);}
+}
+
+@keyframes jump{
+  0%{top: -40px;}
+  50%{top: -70px;}
+  100%{top: -40px;}
+}

@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: skyblue;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 200px;
+  transition: 5s;
+}
+
+img:hover {
+    transform: translateX(-200px) translateY(200px) scale(2,2);
+}
+
+.circle {
+  width: 100px;
+  background: pink;
+  padding: 50px 0;
+  margin: 60px auto;
+  line-height: 0;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  transition: background 1s, transform 0.3s 1s ease-in;
+}
+
+.circle:hover {
+  background: salmon;
+  transform: rotateZ(360deg);
+}

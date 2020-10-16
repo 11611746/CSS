@@ -1,0 +1,135 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.header-container {
+  padding: 10px;
+  height: 100px;
+}
+
+.header-container h1 {
+  position: absolute;
+  margin: 0px;
+  top: 40px;  
+  color: #222f3e;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.fa-shopping-basket {
+  position: absolute;
+  right: 40px;
+  top: 55px;
+  color:#ee5253;
+}
+
+.body-container {
+  padding: 10px;
+  height: 600px;
+  display: flex;
+  padding: 100px;
+}
+
+.card{
+    height: 400px;
+    width: 250px;
+    background: #1dd1a1;
+    border-radius: 15px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+img{
+    height: 250px;
+}
+
+.body-container .card .g-name{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0;
+    color: #222f3e;
+}
+
+.body-container .card .cost{
+font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0px 10px 10px 10px;
+    margin: 0;
+    color: #222f3e;
+}
+
+.body-container .card button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px;
+    margin-left : 70px;  
+    margin-top: 20px; 
+    font-size: 1rem;
+    font-weight: 500;
+    background: #576574;
+    color: #ffffff;    
+}
+
+#img1{
+    position: absolute;
+    left: 189px;
+}
+
+#img2{
+    position: absolute;
+    left: 620px;
+}
+
+#img3{
+    position: absolute;
+    left: 1050px;
+}
+
+#img4{
+    position: absolute;
+    left: 1479px;
+}
+
+.card:hover #img4{
+    animation: s4 2s ease 1s 1 normal none;
+}
+
+.card:hover #img3{
+    animation: s3 2s ease 1s 1 normal none;
+}
+
+/* .card:hover #img2{
+    animation: s2 2s ease 1s 1 normal none;
+}
+
+.card:hover #img1{
+    animation: s1 2s ease 1s 1 normal none;
+}
+
+@keyframes s4{
+    0%{transform: translateX(0px); opacity: 0;}
+    100%{transform: translate(368px,-158px); height: 30px;}
+}
+
+@keyframes s3{
+    0%{transform: translateX(0px); opacity: 0;}
+    100%{transform: translate(797px,-158px); height: 30px;}
+}
+
+@keyframes s2{
+    0%{transform: translateX(0px); opacity: 0;}
+    100%{transform: translate(1227px,-158px); height: 30px;}
+}
+
+@keyframes s1{
+    0%{transform: translateX(0px); opacity: 0;}
+    100%{transform: translate(1658px,-158px); height: 30px;}
+} */
