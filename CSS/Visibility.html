@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility</title>
+    <!-- Property -->
+    <!-- 
+        visibility
+     -->
+
+    <!-- values -->
+    <!-- 
+         hidden
+         collapse
+         visible
+      -->
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      #box1 {
+        margin: 20px auto;
+        padding: 20px;
+        width: 300px;
+        line-height: 30px;
+        font-size: 1rem;
+        border: 1px solid;
+        /* display: none; */
+      }
+
+      ul li {
+        display: inline;
+        visibility: hidden;
+      }
+
+      span{
+          display: block;
+      }
+
+      td{
+          padding: 10px;
+      }
+
+      tr.first {
+          visibility: collapse;
+      }
+
+      .td5 {
+          visibility: collapse;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Visibility</h1>
+    <div id="box1">
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Carrot</li>
+        <li>Papaya</li>
+        <li>Orange</li>
+      </ul>
+
+      <span>Apple</span>
+      <span>Banana</span>
+      <span>Carrot</span>
+      <span>Papaya</span>
+      <span>Orange</span>
+    </div>
+
+    <table border="1">
+        <tr class="fourth">
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr class="first">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr class="second">
+            <td>4</td>
+            <td class="td5">5</td>
+            <td>6</td>
+        </tr>
+        <tr class="third">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+  </body>
+</html>

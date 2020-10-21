@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <!-- Properties -->
+    <!-- 
+        @media screen and (max-width: breakpoint)
+     -->
+    <!-- values -->
+    <!-- 
+        any-hover
+        any-pointer
+        aspect-ratio
+        color
+        color-gamut
+        grid
+        height
+        hover
+        inverted-colors
+        max-aspect-ratio
+        max-color
+        max-color-index
+        max-height
+        max-resolution
+        max-width
+        min-aspect-ratio
+        min-color
+        min-height
+        min-resolution
+        min-width
+        orientation
+        monochrome
+        overflow-block
+        overflow-inline
+        pointer
+        resolution
+        scan
+        scripting
+        update
+        width
+        color-index
+        light-level
+        max-monochrome
+        min-monochrome
+        min-color-index
+     -->
+
+    <!-- Logical Operators -->
+    <!-- 
+        And
+        Not
+        Only
+     -->
+
+    <!-- CSS Media Types -->
+    <!-- 
+         All
+         print
+         screen
+         speech
+      -->
+
+    <!-- Viewport -->
+    <!-- 
+         1920
+         1440
+         1366
+         1024
+         700-900
+         320-480
+      -->
+
+    <style>
+      h1 {
+        color: #ffffff;
+        text-align: center;
+        line-height: 800px;
+        font-size: 5rem;
+      }
+
+      body {
+        background: #1abc9c;
+      }
+
+      @media screen and (max-width: 1024px) {
+        h1 {
+          color: #ffffff;
+          text-align: center;
+          line-height: 800px;
+          font-size: 4rem;
+        }
+
+        body {
+          background: #2c3e50;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        h1 {
+          color: #ffffff;
+          text-align: center;
+          line-height: 800px;
+          font-size: 3rem;
+        }
+
+        body {
+          background: #8e44ad;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        h1 {
+          color: #ffffff;
+          text-align: center;
+          line-height: 800px;
+          font-size: 2rem;
+        }
+
+        body {
+          background: #e74c3c;
+        }
+      }
+
+      @media screen and (max-width: 320px) {
+        h1 {
+          color: #ffffff;
+          text-align: center;
+          line-height: 800px;
+          font-size: 1rem;
+        }
+
+        body {
+          background: #3498db;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Queries</h1>
+  </body>
+</html>

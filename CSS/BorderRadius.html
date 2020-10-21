@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius</title>
+    <!-- Properties -->
+    <!-- 
+        border-top-left-radius
+        border-top-left-radius
+        border-top-right-radius
+        border-top-right-radius
+
+        border-top-left-radius: 20px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 50px;
+        border-top-right-radius: 10px;
+     -->
+
+    <!-- Short hand -->
+    <!-- 
+         border-radius
+
+         border-radius: 20px;
+         border-radius: 10px 20px;
+         border-radius: 20px 30px 50px 10px;
+      -->
+
+    <!-- prefix -->
+    <!-- 
+          -webkit-          (chrome and safari)
+          -moz-             (firefox)
+    -->
+
+    <style>
+      .div1 {
+        border: 1px solid #ff3f34;
+        margin: 20px;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 10px;
+
+        -webkit-border-top-left-radius: 20px;
+        -webkit-border-top-right-radius: 30px;
+        -webkit-border-bottom-right-radius: 50px;
+        -webkit-border-bottom-left-radius: 10px;
+
+        -moz-border-top-left-radius: 20px;
+        -moz-border-top-right-radius: 30px;
+        -moz-border-bottom-right-radius: 50px;
+        -moz-border-bottom-left-radius: 10px;
+
+        /* border-radius: 20px; */
+        /* border-radius: 10px 40px; */
+        /* border-radius: 20px 30px 50px 10px; */
+      }
+
+      .div2 {
+        border: 1px solid #ff3f34;
+        margin: 20px;
+        padding: 20px;
+
+        border-radius: 30%;
+        -webkit-border-radius: 30%;
+        -moz-border-radius: 30%;
+      }
+
+      .div3 {
+        border: 1px solid #ff3f34;
+        margin: 20px auto;
+        padding: 20px;
+        height: 60px;
+        width: 60px;
+
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Border Radius</h1>
+    <div class="div1">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+        obcaecati explicabo natus ea nostrum repellendus recusandae dicta rem,
+        accusantium consequuntur repudiandae, delectus quo impedit ipsum, in
+        necessitatibus et dolores provident.
+      </p>
+    </div>
+
+    <div class="div2">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+        obcaecati explicabo natus ea nostrum repellendus recusandae dicta rem,
+        accusantium consequuntur repudiandae, delectus quo impedit ipsum, in
+        necessitatibus et dolores provident.
+      </p>
+    </div>
+
+    <div class="div3">Circle</div>
+  </body>
+</html>

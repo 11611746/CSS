@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Style</title>
+    <!-- Properties -->
+    <!-- 
+        list-style-image
+        list-style-position
+        list-style-type
+        list-style
+     -->
+
+    <!-- list-style-type ul values -->
+    <!-- 
+        square
+        circle
+        none
+        disc
+     -->
+
+    <!-- list-style-type ol values -->
+    <!-- 
+        upper-alpha
+        lower-alpha
+        upper-roman
+        lower-roman
+        none
+        decimal
+     -->
+
+    <!-- list-style-position values -->
+    <!-- 
+        inside
+        outside
+     -->
+
+    <style>
+      ul {
+        list-style-type: circle;
+        border: 1px solid;
+        list-style-position: inside;
+        list-style-image: url("https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/trash-delete-remove-16.png");
+      }
+
+      li{
+          padding: 10px;
+      }
+
+      ol {
+        list-style: decimal outside url("https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/trash-delete-remove-16.png");
+      }
+    </style>
+  </head>
+  <body>
+    <h1>List Style</h1>
+
+    <ul>
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Banana</li>
+      <li>Coconut</li>
+      <li>Papaya</li>
+    </ul>
+
+    <ol>
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Banana</li>
+      <li>Coconut</li>
+      <li>Papaya</li>
+    </ol>
+  </body>
+</html>

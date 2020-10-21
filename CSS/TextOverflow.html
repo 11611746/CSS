@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Overflow</title>
+    <!-- Properties -->
+    <!-- 
+        text-overflow
+     -->
+
+    <!-- text-overflow values -->
+    <!-- 
+        ellipsis
+        string
+        clip
+     -->
+    <style>
+      #p1 {
+        margin: 20px auto;  
+        padding: 20px;
+        width: 50%;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #ff3f34;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      #p2 {
+        margin: 20px auto;
+        padding: 20px;
+        width: 50%;
+        border: 2px solid #ff3f34;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: "[...]";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Overflow</h1>
+    <div id="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error laudantium ex quos perspiciatis quaerat! Quam tempore blanditiis beatae iure! Minima perferendis explicabo consectetur excepturi impedit a necessitatibus optio repudiandae.
+    </div>
+    <div id="p2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio amet fugit quisquam eius repudiandae minus similique distinctio mollitia nobis nostrum cupiditate quidem quae dolorem repellat maiores, iusto, odit fuga! Eum!
+    </div>
+  </body>
+</html>

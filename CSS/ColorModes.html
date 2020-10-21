@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Modes</title>
+    <!-- Different Color Modes -->
+    <!-- 
+        Color Name
+        Hexdecimal (#rrggbb)
+        RGB rgb(255,0,0)
+        RGBA rgba(255,0,0,0.6)
+        HSL hsl(0,100%,50%)
+        HSLA hsla(0,100%,50%,0.6)
+     -->
+
+    <!-- Color Name -->
+    <!-- 
+        Red
+        Green
+        Blue
+        Orange
+        Yellow
+        Pink
+        Magneta
+        Brown
+        Black
+        Tomato
+        Violet
+        Slateblue
+
+        Web Safe Colors (google it)
+     -->
+
+    <!-- HSl -->
+    <!-- 
+        hsl (hue,saturation,lightness)
+
+        values
+        hue -> 0-360
+        saturation -> 0-100%
+        lightness -> 0-100%
+     -->
+
+     <!-- RGBA and HSLA -->
+    <!-- 
+        rgba (255,0,0,alpha)
+
+        alpha -> 0-1
+
+        hsl (hue,saturation,lightness,alpha)
+
+        values
+        hue -> 0-360
+        saturation -> 0-100%
+        lightness -> 0-100%
+        alpha -> 0-1
+     -->
+
+    
+
+     <Style>
+         h1{
+             text-align: center;
+         }
+
+         div{
+             margin: 20px auto;
+             height: 100px;
+             width: 450px;
+             text-align: center;
+             line-height: 100px;
+             font-size: 2rem;
+             color: #ffffff;
+         }
+
+         #div1{
+             background: #2c3e50;
+         }
+
+         #div2{
+             background: rgb(155, 89, 182);
+         }
+
+         #div3{
+             background: rgba(142, 68, 173, 1.0);
+         }
+
+         #div4{
+             background: hsl(190, 100%, 70%);
+         }
+
+         #div5{
+             background:  hsla(290, 100%, 70%, 0.5);
+         }
+
+
+     </Style>
+</head>
+<body>
+    <h1>Color Modes</h1>
+    <div id="div1">hex (#2c3e50)</div>
+    <div id="div2">Rgb (rgb(155, 89, 182))</div>
+    <div id="div3">Rgba (rgba(142, 68, 173,1.0))</div>
+    <div id="div4">hsl (hsl(190, 100%, 70%))</div>
+    <div id="div5">hsla (hsla(290, 100%, 70%, 0.5))</div>
+</body>
+</html>

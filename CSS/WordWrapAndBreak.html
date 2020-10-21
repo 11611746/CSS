@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Wrap And Word Break</title>
+    <!-- Properties -->
+    <!-- 
+        word-wrap
+        word-break
+     -->
+
+    <!-- word-wrap values -->
+    <!--
+        break-word
+        normal
+     -->
+
+    <!-- word-break values -->
+    <!--
+        break-all
+        keep-all
+     -->
+     
+     <style>
+         .box{
+             margin: 20px auto;
+             padding: 20px;
+             width: 50%;
+             border: 1px solid #c0392b;
+         }
+
+         .box2{
+             margin: 20px auto;
+             padding: 20px;
+             width: 50%;
+             border: 1px solid #c0392b;
+             word-wrap: break-word;
+             word-break: break-all;
+         }
+     </style>
+</head>
+<body>
+    <h1>Word Wrap And Word Break</h1>
+    <div class="box">
+        <span>Lorem ipsum</span> dolor, sit amet consectetur adipisicing elit. Nemooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo porro ex, quod dolorem quidem reiciendis? Id corporis laudantium autem, at nostrum debitis eius saepe inventore tempora molestias sapiente quis excepturi?
+    </div>
+    <div class="box2">
+        <span>Lorem ipsum</span> dolor, sit amet consectetur adipisicing elit. Nemooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo porro ex, quod dolorem quidem reiciendis? Id corporis laudantium autem, at nostrum debitis eius saepe inventore tempora molestias sapiente quis excepturi?
+    </div>
+</body>
+</html>

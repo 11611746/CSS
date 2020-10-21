@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration</title>
+    <!-- Properties -->
+    <!-- 
+        text-decoration-line
+        text-decoration-color
+        text-decoration-style
+     -->
+
+    <!-- text-decoration-line values -->
+    <!--
+        underline
+        overline
+        line-through
+        none
+     -->
+
+    <!-- text-decoration-style values -->
+    <!--
+        solid
+        dotted
+        dashed
+        double
+        wavy
+     -->
+
+    <!-- Short Hand -->
+    <!--
+        text-decoration: underline solid #c0392b;
+     -->
+
+     <style>
+         .box{
+             margin: 20px auto;
+             padding: 20px;
+             width: 50%;
+             border: 1px solid #c0392b;
+             line-height: 1.5em;
+             text-align: justify;
+             text-align-last: justify;
+             text-transform: capitalize;
+         }
+
+         span{
+             font-weight: bold;
+             text-decoration: line-through double #c0392b;
+         }
+     </style>
+</head>
+<body>
+    <h1>Text Decoration</h1>
+    <div class="box">
+        <span>Lorem ipsum</span> dolor, sit amet consectetur adipisicing elit. Nemo porro ex, quod dolorem quidem reiciendis? Id corporis laudantium autem, at nostrum debitis eius saepe inventore tempora molestias sapiente quis excepturi?
+    </div>
+</body>
+</html>

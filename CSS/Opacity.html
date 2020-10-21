@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opacity</title>
+    <!-- Opacity -->
+    <!-- 
+        opacity
+
+        values -> 0-1
+     -->
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      #box1 {
+        margin: 20px auto;
+        padding: 20px;
+        width: 450px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 1rem;
+        color: #000;
+        border: 1px solid;
+        background:rgba(142, 68, 173,1.0);
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+      }
+
+      #box2 {
+        margin: 20px auto;
+        padding: 20px;
+        width: 450px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 1rem;
+        color: #000;
+        border: 1px solid;
+        background: rgba(142, 68, 173,0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opacity</h1>
+    <div id="box1">
+        <img src="https://picsum.photos/100/100">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+      blanditiis, dolore perferendis voluptatibus repellat praesentium, velit
+      consequuntur quidem eum assumenda placeat laboriosam earum temporibus
+      magni rem odio deserunt, asperiores maxime?
+    </div>
+
+    <div id="box2">
+        <img src="https://picsum.photos/100/100">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+      blanditiis, dolore perferendis voluptatibus repellat praesentium, velit
+      consequuntur quidem eum assumenda placeat laboriosam earum temporibus
+      magni rem odio deserunt, asperiores maxime?
+    </div>
+  </body>
+</html>

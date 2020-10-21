@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mix Blend</title>
+    <!-- Mix Blend Mode -->
+    <!-- 
+        mix-blend-mode
+     -->
+
+    <!-- values -->
+    <!-- 
+         multiply
+         screen
+         overlay
+         darken
+         lighten
+         color-dodge
+         color-burn
+         hard-light
+         soft-light
+         difference
+         exclusion
+         hue
+         color
+         saturation
+         luminosity
+         normal
+      -->
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      #box1 {
+        margin: 20px auto;
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 1rem;
+        color: #000;
+        border: 1px solid;
+        background: url("https://picsum.photos/id/268/300/300") no-repeat;
+        background-size: cover;
+      }
+
+      #head {
+        background: rgba(44, 62, 80, 1);
+        color: #ffffff;
+        mix-blend-mode: hard-light;
+      }
+
+      #box2 {
+        margin: 20px auto;
+        width: 300px;
+        height: 300px;
+        border: 1px solid;
+        background: rgba(231, 76, 60,1.0);
+      }
+
+      img {
+        background: rgba(44, 62, 80, 1);
+        color: #ffffff;
+        mix-blend-mode: soft-light;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mix Blend</h1>
+    <div id="box1">
+      <h2 id="head">Blend</h2>
+    </div>
+
+    <div id="box2">
+      <img src="https://picsum.photos/id/268/300/300" alt="">
+    </div>
+  </body>
+</html>

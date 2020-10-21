@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <!-- Property -->
+    <!-- 
+        display
+     -->
+
+    <!-- values -->
+    <!-- 
+         inline
+         block
+         inline-block
+         list-item
+         flex
+         grid
+         inline-flex
+         inline-grid
+         table
+         inline-table
+         table-row
+         table-cell
+         table-column
+         table-caption
+         table-column-group
+         table-row-group
+         table-header-group
+         table-footer-group
+         run-in
+         contents
+         none
+      -->
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      #box1 {
+        margin: 20px auto;
+        padding: 20px;
+        width: 300px;
+        line-height: 30px;
+        font-size: 1rem;
+        border: 1px solid;
+        /* display: none; */
+      }
+
+      ul li {
+        display: inline;
+        margin: 5px;
+      }
+
+      span{
+          display: block;
+      }
+
+      a{         
+          margin: 5px; 
+          padding: 1px;
+      }
+
+      span.spn{
+         display: inline-block;
+         margin: 5px; 
+      }
+
+      .ahref{
+          display: list-item;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display</h1>
+    <div id="box1">
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Carrot</li>
+        <li>Papaya</li>
+        <li>Orange</li>
+      </ul>
+
+      <span>Apple</span>
+      <span>Banana</span>
+      <span>Carrot</span>
+      <span>Papaya</span>
+      <span>Orange</span>
+
+      <a href="#">Apple</a>
+      <a href="#">Banana</a>
+      <a href="#">Carrot</a>
+      <a href="#">Papaya</a>
+      <a href="#">Orange</a>
+
+      <span class="spn">Apple</span>
+      <span class="spn">Banana</span>
+      <span class="spn">Carrot</span>
+      <span class="spn">Papaya</span>
+      <span class="spn">Orange</span>
+
+      <a href="#" class="ahref">Apple</a>
+      <a href="#" class="ahref">Banana</a>
+      <a href="#" class="ahref">Carrot</a>
+      <a href="#" class="ahref">Papaya</a>
+      <a href="#" class="ahref">Orange</a>
+    </div>
+  </body>
+</html>

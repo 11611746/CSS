@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoxShadow</title>
+    <!-- Properties -->
+    <!-- 
+        box-shadow: h-offset v-offset blur spread color;
+        box-shadow: h-offset v-offset blur spread color inset;
+     -->
+
+    <!-- prefix -->
+    <!-- 
+          -webkit-          (chrome and safari)
+          -moz-             (firefox)
+    -->
+
+    <style>
+      .div1 {
+        margin: 20px auto;
+        padding: 20px;
+        width: 400px;
+        height: 200px;
+        border: 1px solid #3c40c6;
+        box-shadow: 2px 2px 8px 0px #808e9b, 4px 4px 12px 0px #485460;
+        -webkit-box-shadow: 2px 2px 8px 0px #808e9b, 4px 4px 12px 0px #485460;
+        -moz-box-shadow: 2px 2px 8px 0px #808e9b, 4px 4px 12px 0px #485460;
+        box-sizing: border-box;
+      }
+
+      .div2 {
+        margin: 40px auto;
+        padding: 20px;
+        width: 400px;
+        height: 200px;
+        border: 1px solid #3c40c6;
+        box-shadow: 1px 1px 12px 0px #808e9b inset;
+        -webkit-box-shadow: 1px 1px 12px 0px #808e9b inset;
+        -moz-box-shadow: 1px 1px 12px 0px #808e9b inset;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BoxShadow</h1>
+    <div class="div1"></div>
+    <div class="div2"></div>
+  </body>
+</html>

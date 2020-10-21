@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background: rgba(149, 165, 166,1.0);
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper{
+            border: 0px solid;
+            width: 1000px;
+            background: #ffffff;
+            margin: 0 auto;
+        }
+
+        #header{
+            background: rgba(44, 62, 80,1.0);
+            color: rgba(236, 240, 241,1.0);
+            height: 40px;
+            padding: 10px 0 30px 10px;
+        }
+
+        #menu{
+            background: rgba(44, 62, 80,1.0);
+        }
+
+        #menu li {
+            display: inline-block;
+        }
+
+        #menu li a {
+            color: rgba(236, 240, 241,1.0);
+            display: block;
+            text-decoration: none;
+            padding: 10px 13px;
+        }
+
+        #menu li a:hover {
+            background: rgba(127, 140, 141,1.0);
+            display: block;
+            text-decoration: none;
+            padding: 10px 13px;
+        }
+
+        #content{
+            width: 70%;
+            float: left;
+            min-height: 500px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: justify;
+        }
+
+        #sidebar{
+            background: rgba(46, 204, 113,1.0);
+            width: 30%;
+            float: right;
+            min-height: 500px;
+        }
+
+        #sidebar li{
+            list-style: none;
+        }
+
+        #sidebar li a{
+            text-decoration: none;
+            color: rgba(236, 240, 241,1.0);
+            display: block;
+            padding: 20px;
+        }
+
+        #sidebar li a:hover {
+            text-decoration: none;
+            background: rgba(39, 174, 96,1.0);
+            display: block;
+            padding: 20px;
+        }
+
+        #footer{
+            background: rgba(155, 89, 182,1.0);
+            clear: both;
+            text-align: center;
+            padding: 5px 10px;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Header</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Design Layout</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis libero laborum cum ratione, dignissimos consectetur unde illo nesciunt corporis esse assumenda maxime quisquam sapiente obcaecati, illum consequatur earum repudiandae nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quibusdam voluptatem dignissimos harum nisi nulla voluptatum neque eveniet quas repudiandae alias culpa, tempore debitis ducimus illo cumque iste, quos adipisci. Odio beatae illo dolores eaque ipsa quo esse animi non.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum inventore ullam praesentium error adipisci, repudiandae tempora? Ipsa, odio reprehenderit quasi qui at, obcaecati amet quo repudiandae, nobis tempora sit.</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+</body>
+</html>
