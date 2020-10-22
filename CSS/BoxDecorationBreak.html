@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Decoration Break</title>
+    <!-- property -->
+    <!-- 
+        box-decoration-break
+     -->
+
+     <!-- values -->
+     <!-- 
+         clone
+         slice
+      -->
+
+      <!-- prefix -->
+      <!-- 
+          -moz-
+          -webkit-
+       -->
+
+      <style>
+          span{
+              background: #1abc9c;
+              box-sizing: border-box;
+              border: 1px solid;
+              border-radius: 5px;
+              box-decoration-break: clone;
+              -webkit-box-decoration-break: clone;
+              padding: 10px;
+              line-height: 40px;
+          }
+      </style>
+</head>
+<body>
+    <h1>Box Decoration Break</h1>
+        <span>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Illum exercitationem <br>laudantium voluptate consectetur, eos iste sit odit <br>mollitia recusandae tempora porro <br>sed ad dolore totam officia ex animi magnam cupiditate!</span>
+</body>
+</html>

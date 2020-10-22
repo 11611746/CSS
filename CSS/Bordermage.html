@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Image</title>
+    <!-- properties -->
+    <!-- 
+        border-image-source
+        border-image-slice
+        border-image-width
+        border-image-outset
+        border-image-repeat
+     -->
+
+    <!-- border-image-repeat values -->
+    <!-- 
+          repeat
+          stretch
+          round
+          space
+       -->
+
+    <!-- Short Hand -->
+    <!--           
+        border-image: source slice/width/outset repeat;
+       -->
+
+
+    <style>
+      .box {
+        margin: 20px auto;
+        height: 250px;
+        width: 300px;
+        text-align: justify;
+        padding: 10px;
+        border: 10px solid #1abc9c;
+        /* background: #3498db; */
+        /* border-image-source: url("https://www.w3schools.com/cssref/border.png");
+        border-image-slice: 30;
+        border-image-repeat: round stretch;
+        border-image-outset: 10px;
+        border-image-width: 10px; */
+
+        /* border-image: url("https://www.w3schools.com/cssref/border.png") 30/10px/10px round stretch; */
+
+        border-image: linear-gradient(#A770EF,#CF8BF3,#FDB99B) 1/10px/10px stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Border Image</h1>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere, vero
+      voluptatibus voluptate sequi error quam, adipisci iusto ipsa saepe
+      doloribus sint. Voluptatum magnam architecto laudantium rem ullam non
+      numquam dolorem, quibusdam reiciendis officiis possimus, aperiam odit
+      impedit laborum temporibus minima aspernatur nobis, magni sint?
+      Consequatur dolorem ipsum autem optio.
+    </div>
+  </body>
+</html>

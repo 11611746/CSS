@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip-Path</title>
+    <!-- property -->
+    <!-- 
+        clip-path
+     -->
+
+     <!-- values -->
+     <!-- 
+         circle
+         ellipse
+         inset
+         polygon
+      -->
+      <style>
+          img{
+              /* clip-path: circle(15% at 80% 55%); */
+              /* clip-path: ellipse(15% 20% at 80% 55%); */
+              /* clip-path: inset(45% 5% 30% 10%); */
+              clip-path: polygon(20% 0, 80% 0, 100% 50%, 50% 100%, 0% 50%);
+          }
+      </style>
+</head>
+<body>
+    <h1>Clip-Path</h1>
+    <img src="https://picsum.photos/seed/picsum/500/600" alt="picsum">
+</body>
+</html>

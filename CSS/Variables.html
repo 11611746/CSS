@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable</title>
+    <!-- Variable -->
+    <!-- 
+        declaration
+        :root{
+            --variable-name: value;
+        }
+
+        Use
+        property-name: var(--variable-name);
+     -->
+
+    <style>
+      body {
+        font-size: 13px;
+      }
+
+      :root {
+        --textColor: #2c3e50;
+        --marginAll: 20px 20px;
+        --boxHeight: 200px;
+        --boxWeight: 200px;
+        --displayInline: inline-block;
+        --fontSize: 2em;
+        --textHorCenter: center;
+        --textVerCenter: 200px;
+      }
+
+      .box1 {
+        color: var(--textColor);
+        margin: var(--marginAll);
+        height: var(--boxHeight);
+        width: var(--boxWeight);
+        background: #1abc9c;
+        display: var(--displayInline);
+        font-size: var(--fontSize);
+        text-align: var(--textHorCenter);
+        line-height: var(--textVerCenter);
+      }
+
+      .box2 {
+        color: var(--textColor);
+        margin: var(--marginAll);
+        height: var(--boxHeight);
+        width: var(--boxWeight);
+        background: #3498db;
+        display: var(--displayInline);
+        font-size: var(--fontSize);
+        text-align: var(--textHorCenter);
+        line-height: var(--textVerCenter);
+      }
+
+      .box3 {
+        color: var(--textColor);
+        margin: var(--marginAll);
+        height: var(--boxHeight);
+        width: var(--boxWeight);
+        background: #9b59b6;
+        display: var(--displayInline);
+        font-size: var(--fontSize);
+        text-align: var(--textHorCenter);
+        line-height: var(--textVerCenter);
+      }
+
+      .box4 {
+        color: #ffffff;
+        margin: 20px auto;
+        width: 100vw;
+        height: 50vh;
+        background: #e74c3c;
+        font-size: var(--fontSize);
+        text-align: var(--textHorCenter);
+        line-height: 50px;
+
+        --contentOverflow: auto;
+        --margin: 0 1%;
+      }
+
+      .box4 .sub-b1 {
+        line-height: normal;
+        float: left;
+        background: #2ecc71;
+        width: 45%;
+        height: 70%;
+        overflow: var(--contentOverflow);
+        margin: var(--margin);
+        font-size: 0.8em;
+      }
+
+      .box4 .sub-b2 {
+        line-height: normal;
+        float: right;
+        background: #8e44ad;
+        width: 45%;
+        height: 70%;
+        overflow: var(--contentOverflow);
+        margin: var(--margin);
+        font-size: 0.8em;
+      }
+
+
+      @media screen and (max-width: 700px) {
+        .box4 {
+          color: #ffffff;
+          margin: 20px auto;
+          width: 100vw;
+          height: auto;
+          background: #e74c3c;
+          font-size: var(--fontSize);
+          text-align: var(--textHorCenter);
+          line-height: 50px;
+
+          --margin: 5px 1%;
+        }
+
+        .box4 .sub-b1 {
+          line-height: normal;
+          float: none;
+          background: #2ecc71;
+          width: 98%;
+          height: auto;
+          font-size: 0.8em;
+          margin: var(--margin);
+        }
+
+        .box4 .sub-b2 {
+          line-height: normal;
+          float: none;
+          background: #8e44ad;
+          width: 98%;
+          height: auto;
+          font-size: 0.8em;
+          margin: var(--margin);
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .box4 {
+          color: #ffffff;
+          margin: 20px auto;
+          width: 100vw;
+          height: auto;
+          background: #e74c3c;
+          font-size: var(--fontSize);
+          text-align: var(--textHorCenter);
+          line-height: 50px;
+
+          --margin: 5px 1%;
+        }
+
+        .box4 .sub-b1 {
+          line-height: normal;
+          float: none;
+          background: #2ecc71;
+          width: 98%;
+          height: auto;
+          font-size: 0.8em;
+          margin: var(--margin);
+        }
+
+        .box4 .sub-b2 {
+          line-height: normal;
+          float: none;
+          background: #8e44ad;
+          width: 98%;
+          height: auto;
+          font-size: 0.8em;
+          margin: var(--margin);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Variable</h1>
+
+    <div class="box1">Box1</div>
+    <div class="box2">Box2</div>
+    <div class="box3">Box3</div>
+    <div class="box4">
+      <h3>Box3</h3>
+      <div class="sub-b1">
+        Sub-Box1
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          consectetur voluptatem, pariatur repellat iure quod maxime sint eos,
+          id, dignissimos dolor qui accusamus libero nam itaque tempora. Sed,
+          molestias pariatur?
+        </p>
+      </div>
+      <div class="sub-b2">
+        Sub-Box2
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          consectetur voluptatem, pariatur repellat iure quod maxime sint eos,
+          id, dignissimos dolor qui accusamus libero nam itaque tempora. Sed,
+          molestias pariatur?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
