@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PseudoElements</title>
+    <!-- Pseudo Elements -->
+    <!-- 
+        ::after
+        ::before
+        ::first-letter
+        ::first-line
+        ::selection
+        ::placeholder
+     -->
+
+    <style>
+      h1:hover::before {
+        content: "Before";
+        background: #1abc9c;
+        color: #000;
+      }
+
+      h1::after {
+        content: "After";
+        background: #1abc9c;
+        color: #000;
+      }
+
+      p::first-letter {
+        color: red;
+        font-size: 1.5rem;
+      }
+
+      li::first-line {
+        color: red;
+        font-size: 1.5rem;
+      }
+
+      ::selection {
+        background: #2c3e50;
+        color: #ffffff;
+      }
+
+      ::placeholder {
+        color: rgb(113, 12, 247);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PseudoElements</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quibusdam
+      corrupti nisi labore ab obcaecati vero placeat fuga nam commodi laborum
+      quam adipisci minima quia id nemo harum, qui explicabo voluptas odio aut.
+      Optio, ducimus rerum? Quo aspernatur ab harum velit, iste quas ipsam illum
+      corrupti sint quis rem earum!
+    </p>
+
+    <ul>
+      <li>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quam aut
+        debitis, harum sapiente quasi vitae rem odit. Inventore ipsa nulla
+        consequuntur quisquam aliquam accusamus odio, ex ullam adipisci soluta.
+      </li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, accusantium
+      atque laudantium cum iste veritatis earum corporis rerum possimus officia
+      alias, ad beatae numquam omnis velit ab, eius natus molestiae?
+    </p>
+
+    <form>
+      <label for="">Name</label>
+      <input type="text" placeholder="Username" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Function</title>
+    <style>
+      h1:hover::after {
+        content: attr(class);
+        background: #1abc9c;
+        color: #000;
+      }
+
+      p:hover::after {
+        content: attr(data-userDefineAttr);
+        background: #1abc9c;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Attribute Function</h1>
+
+    <p data-userDefineAttr="hello">User Defined Attribute </p>
+  </body>
+</html>

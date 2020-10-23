@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <!-- Pseudo Classes -->
+    <!-- 
+        :first-child
+        :last-child
+        :nth-child()
+        :nth-last-child()
+        :nth-last-of-type()
+        :nth-of-type()
+        :only-child
+        :only-of-type
+        :first-of-type
+        :last-of-type
+        :empty
+        :not()
+        :lang()
+        :link
+        :hover
+        :visited
+        :active
+        :target
+        :focus
+        :checked
+        :disabled
+        :enabled
+        :required
+        :optional
+        :in-range
+        :out-of-range
+        :read-only
+        :read-write
+        :valid
+        :invalid
+        :default
+        :root
+     -->
+
+     <style>
+         #list li:first-child{
+            color: red;
+         }
+
+         #list li:last-child{
+             color:blue
+         }
+
+         /* #list-tow li:nth-child(2n+1){
+             color: grey;
+         } */
+
+         #list-tow li:nth-last-child(2n-1){
+             color: grey;
+         }
+
+         p:not(#test){
+             color: brown;
+         }
+
+         p:lang(en){
+             color: bisque;
+         }
+     </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+
+    <ul id="list">
+        <li>apple</li>
+        <li>banana</li>
+        <li>dog</li>
+        <li>cat</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis perferendis totam accusantium pariatur asperiores libero, hic animi voluptatem aliquam reprehenderit quam! Enim laborum corrupti odit nihil corporis maiores incidunt?</p>
+    <p id="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis perferendis totam accusantium pariatur asperiores libero, hic animi voluptatem aliquam reprehenderit quam! Enim laborum corrupti odit nihil corporis maiores incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis perferendis totam accusantium pariatur asperiores libero, hic animi voluptatem aliquam reprehenderit quam! Enim laborum corrupti odit nihil corporis maiores incidunt?</p>
+
+    <ul id="list-tow">
+        <li>Lorem ipsum dolor sit amet elit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet elit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis perferendis totam accusantium pariatur asperiores libero, hic animi voluptatem aliquam reprehenderit quam! Enim laborum corrupti odit nihil corporis maiores incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis perferendis totam accusantium pariatur asperiores libero, hic animi voluptatem aliquam reprehenderit quam! Enim laborum corrupti odit nihil corporis maiores incidunt?</p>
+
+    <ul id="list-three">
+        <li>Lorem ipsum dolor sit amet elit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet elit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet elit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <p lang="en">Hello hi</p>
+    <p lang="fr">Bonjour sur notre site</p>
+</body>
+</html>

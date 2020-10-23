@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <!-- Attribute Selector -->
+    <!-- 
+        A[attr]         -   element with specefic attribute
+        A[attr=val]     -   element with specefic attribute and exact value
+        A[attr^=val]    -   attribute begins with value
+        A[attr|=val]    -   attribute begins with value OR is first in a dash seperated list (eg- dods1-)
+        A[attr$=val]    -   attribute ends with value
+        A[attr*=val]    -   attribute value occurs anywhere
+        A[attr~=val]    -   value matches attribute n space seperated list
+     -->
+
+     <style>
+         img[alt]{
+             border: 5px solid #1abc9c;
+         }
+
+         input[type]{
+             border-radius: 5px;
+             border: 1px solid #e74c3c;
+             padding: 5px 10px;
+             margin-left: 5px;
+             outline-style: none;
+         }       
+
+         a[target]{
+             text-decoration: none;
+             color: #16a085;
+         }
+
+         input[type="password"]{
+             border-radius: 5px;
+             border: 1px solid #1abc9c;
+             padding: 5px 10px;
+             margin-left: 5px;
+             outline-style: none;
+         }
+
+         img[alt^="d"]{
+             border: 5px solid #e74c3c;
+         }
+
+         img[alt$="ppy"]{
+             border: 5px solid #3498db;
+         }
+
+         img[alt*="baby"]{
+             border: 5px solid #2c3e50;
+         }
+
+         img[alt~="is"]{
+             border: 5px solid #f1c40f;
+         }
+     </style>
+  </head>
+  <body>
+    <h1>Attribute Selector</h1>
+    <div>
+      <img src="https://picsum.photos/id/237/150/150" alt="picsum" />
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+        libero impedit iste optio <a href="#">laudantium iusto</a> nobis molestiae omnis quo,
+        magni repellendus praesentium sequi pariatur labore quis aliquam totam
+        sint suscipit sed accusantium quia est culpa assumenda. Vitae aperiam
+        adipisci, sint suscipit corrupti repellat, illum dolore recusandae
+        <a href="#" target="_blank">voluptate dolorum possimus commodi.</a>
+      </p>
+    </div>
+    <div>
+      <img src="https://picsum.photos/id/237/150/150" alt="dog1"/>
+      <img src="https://picsum.photos/id/237/150/150" alt="dog2"/>
+      <img src="https://picsum.photos/id/237/150/150" alt="not cat but a puppy"/>
+      <img src="https://picsum.photos/id/237/150/150" alt="it's a baby dog"/>
+      <img src="https://picsum.photos/id/237/150/150" alt="itissmall"/>
+      <img src="https://picsum.photos/id/237/150/150" alt="it is small"/>
+      <img src="https://picsum.photos/id/237/150/150" alt="not a cat"/>
+    </div>
+    <div>
+      <p>
+        <label>Name</label>
+        <input type="text" />
+      </p>
+      <p>
+        <label for="gen">Gender</label>
+        <input type="radio" name="gen" id="male" />Male
+        <input type="radio" name="gen" id="female" />Female
+      </p>
+      <p>
+        <label for="">Address</label>
+        <input type="address" />
+      </p>
+      <p>
+        <label for="">Password</label>
+        <input type="password" />
+      </p>
+    </div>
+  </body>
+</html>
