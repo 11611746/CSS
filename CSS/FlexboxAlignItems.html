@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Align Items</title>
+    <!-- properties -->
+    <!-- 
+        justify-contet
+     -->
+
+    <!-- values -->
+    <!-- 
+        flex-start
+        flex-end
+        center
+        stretch (default)
+        baseline
+      -->
+
+    <style>
+      .container {
+        margin: 50px;
+        padding: 10px;        
+        background: #34495e;
+        border: 3px solid;
+        width: 200px;
+        height: 300px;
+
+        display: flex;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+
+        flex-flow: row wrap;
+        align-items: baseline;
+      }
+
+      .items{
+          margin: 5px;
+          padding: 10px;
+      }
+
+      .s4 {
+        background-color: #e74c3c;
+        font-size: 0.5rem;
+      }
+
+      .s5 {
+        background-color: #27ae60;
+        font-size: 2rem;
+      }
+
+      .s6 {
+        background-color: #8e44ad;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Align Items</h1>
+
+    <div class="container">
+      <div class="s4 items">four</div>
+      <div class="s5 items">five</div>
+      <div class="s6 items">six</div>
+    </div>
+  </body>
+</html>

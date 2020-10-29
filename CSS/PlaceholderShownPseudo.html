@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder-shown Pseudo Class</title>
+    <!-- Pseudo Class -->
+    <!-- 
+        :placeholder-shown
+
+        works with text
+        donot works with date/time/month/week
+     -->
+     <style>
+         ul li{
+             list-style: none;
+             margin: 10px;
+         }
+
+         input{
+             padding: 10px;
+         }
+
+         input[type="text"]:placeholder-shown{
+             border: 1px solid #e74c3c;
+             border-radius: 5px;
+         }
+     </style>
+</head>
+<body>
+    <h1>Placeholder-shown Pseudo Class</h1>
+    <ul>
+        <li><input type="text" placeholder="Enter Fname"></li>
+        <li><input type="text" placeholder="Enter Lname"></li>
+        <li><input type="email" placeholder="Enter Email" autocomplete="none"></li>
+        <li><input type="number" placeholder="Enter Number"></li>
+        <li><input type="time" placeholder="Enter Add"></li>
+        <li><input type="month" placeholder="Enter Add"></li>
+    </ul>
+    
+    
+    
+    
+</body>
+</html>

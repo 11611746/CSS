@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Flex-Shrink</title>
+    <!-- properties -->
+    <!-- 
+        flex-shrink
+     -->
+
+    <!-- values -->
+    <!-- 
+        0
+        1 (default)
+      -->
+
+    <!-- Short Hand -->
+    <!-- 
+      flex: grow shrink basis
+     -->
+
+    <style>
+      .container {
+        margin: 50px;
+        background: #34495e;
+        border: 3px solid;
+        padding: 0;
+        box-sizing: border-box;
+
+        display: flex;
+      }
+
+      .items {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        height: 60px;
+        font-size: 20px;
+
+      }
+
+      .s1 {
+        background-color: #1abc9c;
+        /* flex-basis: 200px;
+        flex-shrink: 0; */
+        flex: 0 1 200px;
+      }
+
+      .s2 {
+        background-color: #3498db;
+      }
+
+      .s3 {
+        background-color: #9b59b6;
+      }
+
+      .s4 {
+        background-color: #c0392b;
+      }
+
+      .s5 {
+        background-color: #7f8c8d;
+        /* flex-grow: 1; */
+
+        flex: 1 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Flex-shrink</h1>
+
+    <div class="container">
+      <div class="s1 items">one</div>
+      <div class="s2 items">two</div>
+      <div class="s3 items">three</div>
+      <div class="s4 items">four</div>
+      <div class="s5 items">five</div>
+    </div>
+  </body>
+</html>

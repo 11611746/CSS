@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Align Content</title>
+    <!-- properties -->
+    <!-- 
+        justify-content
+     -->
+
+    <!-- values -->
+    <!-- 
+        flex-start
+        flex-end
+        center
+        stretch (default)
+        space-around
+        space-between
+        space-evenly
+      -->
+
+    <style>
+      .container {
+        margin: 50px;
+        padding: 10px;        
+        background: #34495e;
+        border: 3px solid;
+        width: 200px;
+        height: 400px;
+
+        display: flex;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+
+        flex-flow: row wrap;
+        align-content: space-evenly;
+      }
+
+      .items{
+          margin: 5px;
+          padding: 10px;
+      }
+
+      .s1 {        
+        background-color: #1abc9c;
+      }
+
+      .s2 {
+        background-color: #3498db;
+      }
+
+      .s3 {
+        background-color: #9b59b6;
+        font-size: 1.5rem;
+      }
+
+      .s4 {
+        background-color: #e74c3c;
+        font-size: 0.5rem;
+      }
+
+      .s5 {
+        background-color: #27ae60;
+        font-size: 2rem;
+      }
+
+      .s6 {
+        background-color: #8e44ad;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Align Content</h1>
+
+    <div class="container">
+      <div class="s1 items">one</div>
+      <div class="s2 items">two</div>
+      <div class="s3 items">three</div>
+      <div class="s4 items">four</div>
+      <div class="s5 items">five</div>
+      <div class="s6 items">six</div>
+    </div>
+  </body>
+</html>

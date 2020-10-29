@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Website Layout</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        /* font-family: "Roboto", sans-serif; */
+        font-family: "Questrial", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      header {
+        background: #2c3e50;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+      }
+
+      header ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+
+      #logo {
+        margin: 0 auto;
+        font-size: 1.5rem;
+      }
+
+      #menu ul li {
+        padding: 10px;
+      }
+
+      #social-links ul li {
+        padding: 10px;
+      }
+
+      header a {
+        color: #fff;
+      }
+
+      #main {
+        display: flex;
+      }
+
+      article {
+        padding: 10px;
+      }
+
+      aside {
+        flex: 0 0 20vw;
+        background: #1abc9c;
+        padding: 10px;
+      }
+
+      aside ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      aside ul li {
+        list-style: none;
+      }
+
+      aside ul li:hover {
+        background: #16a085;        
+        border: 1px solid #16a085;
+      }
+
+      aside a {
+        font-size: 1.2rem;
+        color: #2c3e50;
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #16a085;
+        text-align: start;
+      }
+
+      aside a:hover {
+        color: #fff;
+      }
+
+      aside img {
+        width: 100%;
+      }
+
+      .service-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .service-box {
+        border: 1px solid #ecf0f1;
+        padding: 10px;
+        flex-basis: 32%;
+        max-width: 370px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 8px #bdc3c7;
+        border-radius: 2px;
+        margin-bottom: 15px;
+      }
+
+      .service-box img {
+        width: 100%;
+      }
+
+      .service-box h3{
+          margin: 5px 0 10px 0;
+      }
+
+      .service-desc p{
+          margin: 0 0 15px 0;
+      }
+
+      .call-to-action {
+        align-self: flex-start;
+        margin-top: auto;
+      }
+
+      .call-to-action a {
+        background: #e74c3c;
+        padding: 10px 15px;
+        color: #fff;
+        display: block;
+        box-shadow: 2px 2px 4px #34495e;
+      }
+
+      .call-to-action a:hover {
+        background: #c0392b;
+        padding: 10px 15px;
+        color: #fff;
+        display: block;
+        box-shadow: 2px 2px 4px #34495e;
+      }
+
+      footer {
+        background: #2c3e50;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        font-size: 0.89rem;
+      }
+
+      @media screen and (max-width: 850px){
+          aside {
+        flex: 0 0 30vw;
+      }
+
+      .service-box {
+        flex-basis: 48%;
+      }
+      }
+
+      @media screen and (max-width: 600px){
+          header{
+              flex-direction: column;
+          }
+
+          #logo{
+              order: -1;
+          }
+
+          #main{
+              flex-direction: column;
+          }
+
+          article{
+              order: -1;
+          }
+
+          .service-container{
+              flex-direction: column;
+              align-items: center;
+          }
+
+          h2{
+              text-align: center;
+          }
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="menu">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div id="logo">
+        <a href="">Demo Logo</a>
+      </div>
+
+      <nav id="social-links">
+        <ul>
+          <li>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="main">
+      <aside>
+        <ul>
+          <li><a href="">Link1</a></li>
+          <li><a href="">Link2</a></li>
+          <li><a href="">Link3</a></li>
+          <li><a href="">Link4</a></li>
+          <li><a href="">Link5</a></li>
+        </ul>
+        <img src="https://picsum.photos/id/7/300/300" alt="picsum" />
+      </aside>
+      <article>
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores odit
+          rem eius incidunt at eum sed in beatae architecto laudantium quaerat,
+          aspernatur soluta vel autem dolore? Quia porro ipsam, laboriosam aut
+          officia deleniti provident possimus, rem, facere ab cupiditate
+          voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Minima cupiditate sapiente labore autem quo iste totam temporibus
+          nobis alias aperiam corrupti et ipsam ut vel exercitationem, libero
+          quaerat repellendus commodi quae, nemo soluta repudiandae placeat
+          porro? Nemo dignissimos aspernatur repellendus vero, pariatur enim!
+          Explicabo praesentium fugit quas voluptas quis maiores!
+        </p>
+
+        <h2>Services</h2>
+        <div class="service-container">
+          <div class="service-box">
+            <div class="service-img">
+              <img
+                src="https://picsum.photos/id/0/300/300"
+                alt="lorem picsum"
+              />
+            </div>
+            <div class="service-title">
+              <h3>Lorem ipsum dolor sit</h3>
+            </div>
+            <div class="service-desc">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium alias eos officia nobis sunt iusto. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Totam
+                necessitatibus aliquid repudiandae non tempora sed?
+              </p>
+            </div>
+            <div class="call-to-action">
+              <a href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-img">
+              <img
+                src="https://picsum.photos/id/3/300/300"
+                alt="lorem picsum"
+              />
+            </div>
+            <div class="service-title">
+              <h3>Loremipsum</h3>
+            </div>
+            <div class="service-desc">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium alias eos officia nobis sunt iusto.
+              </p>
+            </div>
+            <div class="call-to-action">
+              <a href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-img">
+              <img
+                src="https://picsum.photos/id/6/300/300"
+                alt="lorem picsum"
+              />
+            </div>
+            <div class="service-title">
+              <h3>Lorem ipsum</h3>
+            </div>
+            <div class="service-desc">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium alias eos officia nobis sunt iusto.
+              </p>
+            </div>
+            <div class="call-to-action">
+              <a href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-img">
+              <img
+                src="https://picsum.photos/id/4/300/300"
+                alt="lorem picsum"
+              />
+            </div>
+            <div class="service-title">
+              <h3>Lorem ipsum</h3>
+            </div>
+            <div class="service-desc">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium alias eos officia nobis sunt iusto.
+              </p>
+            </div>
+            <div class="call-to-action">
+              <a href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-img">
+              <img
+                src="https://picsum.photos/id/5/300/300"
+                alt="lorem picsum"
+              />
+            </div>
+            <div class="service-title">
+              <h3>Lorem ipsum</h3>
+            </div>
+            <div class="service-desc">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium alias eos officia nobis sunt iusto.
+              </p>
+            </div>
+            <div class="call-to-action">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <footer>Developed And Maintained by XXX-XXX-XXX</footer>
+  </body>
+</html>

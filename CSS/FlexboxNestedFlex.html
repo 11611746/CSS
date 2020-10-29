@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Nested Flex</title>
+
+    <style>
+      .container {
+        margin: 50px;
+        padding: 0px;        
+        background: #34495e;
+        border: 3px solid;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .items{
+          color: #000;
+        height: 100px;
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
+      }
+
+      .s1 {        
+        background-color: #1abc9c;
+      }
+
+      .s2 {
+        background-color: #3498db;
+        
+        display: flex;
+      }
+
+      .s2 > .subItems{
+        background: yellow;
+        flex-grow: 1;
+        margin: 5px;
+      }
+
+      .s3 {
+        background-color: #9b59b6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Nested Flex</h1>
+
+    <div class="container">
+      <div class="s1 items">one</div>
+      <div class="s2 items">
+          <div class="sub1 subItems">21</div>
+          <div class="sub1 subItems">22</div>
+          <div class="sub1 subItems">23</div>
+      </div>
+      <div class="s3 items">three</div>
+    </div>
+  </body>
+</html>

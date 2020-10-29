@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Align Self</title>
+    <!-- properties -->
+    <!-- 
+        align-self
+     -->
+
+    <!-- values -->
+    <!-- 
+        auto (default)
+        flex-start
+        flex-end
+        center
+        stretch 
+        baseline
+      -->
+
+    <style>
+      .container {
+        margin: 50px;
+        padding: 10px;        
+        background: #34495e;
+        border: 3px solid;
+        width: 200px;
+        height: 400px;
+
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+      }
+
+      .items{
+          margin: 5px;
+          padding: 10px;
+      }
+
+      .s1 {        
+        background-color: #1abc9c;
+        align-self: flex-start;
+      }
+
+      .s2 {
+        background-color: #3498db;
+      }
+
+      .s3 {
+        background-color: #9b59b6;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Align Self</h1>
+
+    <div class="container">
+      <div class="s1 items">one</div>
+      <div class="s2 items">two</div>
+      <div class="s3 items">three</div>
+    </div>
+  </body>
+</html>
