@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrentColor</title>
+    <!-- properties -->
+    <!-- 
+        text-decoration-line
+        text-decoration-color
+        text-decoration-style
+        text-underline-offset (currentlynot suppoted by all browser)
+     -->
+
+     <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            width: 80%;
+            border: 1px solid #2c3e50;
+            margin: 0 auto;
+            color: #c0392b;
+        }
+
+        h2{
+            text-indent: 10px;
+        }
+
+        .hr{
+            height: 1px;
+            background: currentColor;
+            margin-bottom: 20px;
+        }
+
+        .sub-main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sub1{
+            width: 150px;
+            height: 150px;
+            background: currentColor;
+        }
+
+        .sub2{
+            flex: 1;
+            max-width: 78%;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        p{
+            margin: 0;
+        }
+
+        button{
+            display: block;
+            margin-left: auto;
+            padding: 5px 15px;
+            color: currentColor;
+            background: #1abc9c;
+            border: none;
+        }
+
+        @media screen and (max-width: 550px){
+            .sub-main{
+            flex-direction: column;
+        }
+
+        .sub1{
+            margin: auto;
+        }
+
+        .sub2{
+             max-width: 100%;
+            margin: auto;
+        }
+
+        p{
+            margin-bottom: 16px;
+        }
+
+        button{
+            display: inline;
+            margin-right: auto;
+        }
+
+        }
+     </style>
+</head>
+<body>
+    <h1>CurrentColor</h1>
+    <div class="main">
+
+        <h2>Main Heading</h2>
+        <div class="hr"></div>
+        <div class="sub-main">
+            <div class="sub1"></div>
+            <div class="sub2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vitae. Praesentium itaque molestiae tempora vero harum quidem deleniti officiis sint doloremque quisquam ad hic quae placeat sed aliquid dolore, neque mollitia iusto culpa beatae? Esse error libero nostrum, maiores omnis harum nemo. voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. minima quod natus magnam fuga enim saepe provident nisi pariatur nobis! Dignissimos?</p>
+                <button>Read More</button>
+            </div>         
+        </div>
+
+    </div>
+</body>
+</html>
