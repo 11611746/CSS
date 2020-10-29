@@ -3,19 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroll Behaviour</title>
-    <!-- property -->
-    <!-- 
-        scroll-behavior
-     -->
-     <!-- value -->
-     <!-- 
-         auto (default)
-         smooth
-      -->
+    <title>Scroll-Snapping</title>
     <style>
       html {
-          scroll-behavior: smooth;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
       }
 
       body {
@@ -54,6 +46,7 @@
 
       div {
         height: 100vh;
+        scroll-snap-align: start;
       }
 
       h2 {
