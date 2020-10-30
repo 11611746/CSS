@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform-3D</title>
+    <!-- property -->
+    <!-- 
+        transform-style
+     -->
+    <!-- values -->
+    <!-- 
+        flat   (default)
+        preserve-3d
+     -->
+     <style>
+         .base1{
+              height: 200px;
+              width: 300px;
+              background: #34495e;
+              margin: auto;
+              box-sizing: border-box;              
+              font-size: 2rem;
+              text-align: center;
+              box-sizing: border-box;
+              perspective: 800px; 
+              transform: rotateY(30deg);
+              transform-style: preserve-3d;
+          }
+          #box1{
+              height: 200px;
+              width: 300px;
+              background: #1abc9c;
+              margin: auto;
+              transform: rotateX(60deg);
+          }
+     </style>
+</head>
+<body>
+    <h1>Transform-3D</h1>
+    <div class="base1">
+        <div id="box1">rotateX</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <!-- Properties -->
+    <!-- 
+        transition
+        transition-property
+        transition-duration
+        transition-delay
+        transition-timing-function
+     -->
+
+     <!-- transition-timing-function values -->
+     <!-- 
+         ease           -   slow start,then fast, then end slow
+         linear         -   same speed
+         ease-in        -   slow start
+         ease-out       -   slow end
+         ease-in-out    -   slow start and end
+         step-start
+         step-end
+         steps(4,end)
+         cubic-bezier   -   lets you define your own values
+      -->
+     <style>
+         body{
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+         }
+
+         #box{
+             box-sizing: border-box;
+             width: 100px;
+             height: 100px;
+             background: #34495e;
+             /* transition-property: width,height,background;
+             transition-duration: 1s,1s,1s; */
+
+             /* transition: width,height,background 1s,1s,1s; */
+             transition: all 1s;
+
+             transition-delay: .5s;
+             transition-timing-function: ease-in;
+         }
+
+         #box:hover{
+             width: 300px;
+             height: 300px;
+             background: url("https://picsum.photos/id/243/300/300");
+         }
+
+         #box2{
+             box-sizing: border-box;
+             margin-top: 100px;
+             width: 100px;
+             height: 100px;
+             background: #34495e;
+             transition-property: all;
+             transition-duration: 2s;
+
+             /* transition-timing-function: step-end; */
+             /* transition-timing-function: cubic-bezier(0.1,0.2,0.2,0.1); */
+             /* transition-timing-function: linear;
+             transition-delay: 1s; */
+
+             transition: all 2s linear 1s;
+         }
+
+         #box2:active{
+             width: 300px;
+             height: 300px;
+             background: #3498db;
+         }
+
+         input[type="text"]{
+             box-sizing: border-box;
+             margin-top: 100px;
+             width: 200px;
+             padding: 10px;
+             border: 1px solid;
+             border-radius: 3px;
+             box-shadow: none;
+             transition: width,border,box-shadow 2s,2s,2s;
+             outline-style: none;
+         }
+
+         input[type="text"]:focus{
+            width: 250px;
+            border: 1px solid #1abc9c;
+            box-shadow: 1px 1px 4px #1abc9c;
+         }
+
+         input[type="email"]{
+             box-sizing: border-box;
+             margin-top: 30px;
+             width: 200px;
+             padding: 10px;
+             border: 1px solid;
+             border-radius: 3px;
+             box-shadow: none;
+             transition: width,border,box-shadow 2s,2s,2s;
+             outline-style: none;
+         }
+
+         input[type="email"]:focus{
+            width: 250px;
+            border: 1px solid #e74c3c;
+            box-shadow: 1px 1px 4px #e74c3c;
+         }
+
+         #box3{
+             box-sizing: border-box;
+             margin-top: 20px;
+             width: 100px;
+             height: 100px;
+             background: #e74c3c;
+             transition-property: width;
+             transition-duration: 2s;
+         }
+
+         @media screen and (max-width: 350px){
+             #box3{
+             width: 100%;
+             background:#e74c3c;
+         }
+         }
+
+         
+     </style>
+</head>
+<body>
+    <div id="box3"></div>
+
+    <h1>Transition</h1>
+    <div id="box"></div>
+
+    <div id="box2"></div>
+
+    <input type="text" placeholder="Enter Name">
+    <br>
+    <input type="email" placeholder="Enter Email">
+</body>
+</html>

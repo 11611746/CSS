@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Transform</title>
+    <!-- property -->
+    <!-- 
+        transform
+        transform-origin
+     -->
+
+     <!-- values -->
+     <!-- 
+         rtoteX(angle)
+         rtoteY(angle)
+         rtoteZ(angle)
+         rtote3d(x,y,z,angle)
+         translate3d(x,y,z)
+         translate(x)
+         translate(y)
+         translate(z)
+         scale3d(x,y,z)
+         scale(x)
+         scale(y)
+         scale(z)
+         perspective(n)
+         matrix(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
+         none
+      -->
+      <style>
+          .base1{
+              height: 200px;
+              width: 200px;
+              background: #34495e;
+              margin: auto;
+              box-sizing: border-box;
+          }
+          #box1{
+              height: 200px;
+              width: 200px;
+              background: #1abc9c;
+              margin: auto;
+              transform: perspective(800px) rotateX(50deg);
+              transform-origin: bottom;
+              font-size: 2rem;
+              text-align: center;
+              box-sizing: border-box;
+          }
+
+          .base2{
+              height: 200px;
+              width: 200px;
+              background: #34495e;
+              margin: 40px auto;
+              box-sizing: border-box;
+          }
+          #box2{
+              height: 200px;
+              width: 200px;
+              background: #1abc9c;
+              margin: auto;
+              transform-origin: left;
+              transform: perspective(800px) rotateY(60deg);
+              font-size: 2rem;
+              text-align: center;
+              box-sizing: border-box;
+          }
+
+          .base3{
+              height: 200px;
+              width: 200px;
+              background: #34495e;
+              margin: 40px auto;
+              box-sizing: border-box;
+          }
+          #box3{
+              height: 200px;
+              width: 200px;
+              background: #1abc9c;
+              margin: auto;
+              transform: perspective(800px) rotateZ(60deg);
+              font-size: 2rem;
+              text-align: center;
+              box-sizing: border-box;
+          }
+
+          .base4{
+              height: 200px;
+              width: 200px;
+              background: #34495e;
+              margin: 60px auto;
+              box-sizing: border-box;
+          }
+          #box4{
+              height: 200px;
+              width: 200px;
+              background: #1abc9c;
+              margin: auto;
+              /* transform: perspective(800px) rotateY(60deg) translateX(150px); */
+              transform: perspective(800px) rotateY(60deg) translate3d(50px,50px,100px);
+              font-size: 2rem;
+              text-align: center;
+              box-sizing: border-box;
+          }
+
+          .base5{
+              height: 200px;
+              width: 200px;
+              background: #34495e;
+              margin: 80px auto;
+              box-sizing: border-box;
+          }
+          #box5{
+              height: 200px;
+              width: 200px;
+              background: #1abc9c;
+              margin: auto;
+              transform: perspective(800px) scaleZ(3) rotateX(60deg) ;
+              font-size: 2rem;
+              text-align: center;
+              box-sizing: border-box;
+          }
+
+          .base6{
+              height: 200px;
+              width: 300px;
+              background: #34495e;
+              margin: 80px auto;
+              box-sizing: border-box;
+              perspective: 800px;
+              perspective-origin: bottom;
+          }
+          #box6{
+              height: 200px;
+              width: 300px;
+              background: #1abc9c;
+              margin: auto;
+              transform: rotateY(60deg) ;
+              font-size: 2rem;
+              text-align: center;
+              box-sizing: border-box;
+          }
+          
+      </style>
+</head>
+<body>
+    <h1>3D-Transform</h1>
+    <div class="base1">
+        <div id="box1">rotateX</div>
+    </div>
+
+    <div class="base2">
+        <div id="box2">rotateY</div>
+    </div>
+
+    <div class="base3">
+        <div id="box3">rotateZ</div>
+    </div>
+
+    <div class="base4">
+        <div id="box4">rotateY and translate3d</div>
+    </div>
+
+    <div class="base5">
+        <div id="box5">rotateX and scaleZ</div>
+    </div>
+
+    <div class="base6">
+        <div id="box6">prespective</div>
+    </div>
+    
+    <!-- <div id="box2">translateX</div>
+    <div id="box3">translateY</div>
+    <div id="box4">translate</div>
+    <div id="box5">scaleX</div>
+    <div id="box6">scaleY</div>
+    <div id="box7">scale</div>
+    <div id="box8">skewX</div>
+    <div id="box9">skewY</div>
+    <div id="box10">skewY</div> -->
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D-Transform</title>
+    <!-- property -->
+    <!-- 
+        transform
+        transform-origin
+     -->
+
+     <!-- values -->
+     <!-- 
+         rtote(angle)
+         translate(x,y)
+         translate(x)
+         translate(y)
+         scale(x,y)
+         scale(x)
+         scale(y)
+         skew(x-angle,y-angle)
+         skewX(angle)
+         skewY(angle)
+         matrix(n,n,n,n,n,n)
+         none
+      -->
+      <style>
+          #box1{
+              height: 100px;
+              width: 100px;
+              background: #1abc9c;
+              margin: auto;
+              transform: rotate(90deg);
+              font-size: 2rem;
+              padding: 5px;
+              box-sizing: border-box;
+          }
+          #box2{
+              height: 100px;
+              width: 100px;
+              background:#2ecc71;
+              margin: 40px auto;
+              transform: translateX(100px);
+              font-size: 1.4rem;
+              padding: 5px;
+              box-sizing: border-box;
+          }
+          #box3{
+              height: 100px;
+              width: 100px;
+              background: #3498db;
+              margin: 40px auto;
+              transform: translateY(100px);
+              font-size: 1.4rem;
+              padding: 5px;
+              box-sizing: border-box;
+          }
+          #box4{
+              height: 100px;
+              width: 100px;
+              background: #9b59b6;
+              margin: 40px auto;
+              transform: translate(300px,200px);
+              font-size: 1.4rem;
+              padding: 5px;
+              box-sizing: border-box;
+          }
+          #box5{
+              height: 100px;
+              width: 100px;
+              background:#34495e;
+              margin: 40px auto;
+              transform: scaleX(2);
+              font-size: 1.4rem;
+              padding: 5px;
+              box-sizing: border-box;
+          }
+          #box6{
+              height: 100px;
+              width: 100px;
+              background: #f1c40f;
+              margin: 40px auto;
+              transform: scaleY(2);
+              font-size: 1.4rem;
+              padding: 5px;
+              box-sizing: border-box;
+          }
+          #box7{
+              height: 100px;
+              width: 100px;
+              background:#e67e22;
+              margin: 40px auto;
+              transform: scale(2);
+              font-size: 1.4rem;
+              padding: 5px;
+              box-sizing: border-box;
+          }
+          #box8{
+              height: 200px;
+              width: 100px;
+              background: #e74c3c;
+              margin: 40px auto;
+              transform: skewX(30deg);
+              font-size: 1.4rem;
+              padding: 5px;
+              box-sizing: border-box;
+          }
+          #box9{
+              height: 200px;
+              width: 100px;
+              background: #95a5a6;
+              margin: 40px auto;
+              transform: skewY(30deg);
+              font-size: 1.4rem;
+              padding: 5px;
+              box-sizing: border-box;
+          }
+          #box10{
+              height: 200px;
+              width: 100px;
+              background:#16a085;
+              margin: 40px auto;
+              transform: skew(30deg,30deg);
+              font-size: 1.4rem;
+              padding: 5px;
+              box-sizing: border-box;
+          }
+      </style>
+</head>
+<body>
+    <h1>2D-Transform</h1>
+    <div id="box1">rotate</div>
+    <div id="box2">translateX</div>
+    <div id="box3">translateY</div>
+    <div id="box4">translate</div>
+    <div id="box5">scaleX</div>
+    <div id="box6">scaleY</div>
+    <div id="box7">scale</div>
+    <div id="box8">skewX</div>
+    <div id="box9">skewY</div>
+    <div id="box10">skewY</div>
+</body>
+</html>

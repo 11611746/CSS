@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backface-Visibility</title>
+    <!-- property -->
+    <!-- 
+        backface-visibilty
+     -->
+    <!-- values -->
+    <!-- 
+        hidden
+        visible
+     -->
+    <style>
+      .card {
+        height: 300px;
+        width: 300px;
+        background: transparent;
+        box-sizing: border-box;
+        font-size: 2rem;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -150px;
+        perspective: 800px;
+      }
+
+      .content{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          transition: transform 1s;
+          transform-style: preserve-3d;
+      }
+
+      #box1{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: #9b59b6;
+          backface-visibility: hidden;
+          line-height: 300px;
+      }
+
+      #box2{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: #2c3e50;
+          line-height: 300px;
+          transform: rotateY(180deg);
+          backface-visibility: hidden;
+      }
+
+      .card:hover .content{
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transform-3D</h1>
+    <div class="card">
+      <div class="content">
+        <div id="box1">Box1</div>
+        <div id="box2">Box2</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-Fill-Mode</title>
+    <!-- property -->
+    <!-- 
+        animation-name
+        animation-duration
+        animation-timing-function
+        animation-delay
+        animation-iteration-count
+        animation-direction
+        animation-fill-mode
+        animation-play-state
+        animation
+     -->
+     <style>
+         body{
+             background: #ecf0f1;
+         }
+
+         .container{
+             margin: 50% auto;
+             height: 150px;
+             width: 150px;
+             background: #fff;
+             text-align: center;
+             line-height: 150px;
+             color:tomato;
+             font-size: 1.7rem;
+             font-weight: 600;
+             box-shadow: 0 0 15px rgba(0,0,0,0.1);
+             animation: sample 1s ease-in-out 1 forwards alternate;
+             animation-play-state: paused;
+         }
+
+         .container:hover{
+             animation-play-state: running;
+         }
+
+         @keyframes sample{
+             0%{border-radius: 0%; color: #2c3e50;}
+             100%{border-radius: 50%; background: tomato;}
+         }
+     </style>
+</head>
+<body>
+    <div class="container">
+        Loading...
+    </div>
+</body>
+</html>
