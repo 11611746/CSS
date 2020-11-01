@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      h1 {
+        margin: 50px 0;
+        text-align: center;
+      }
+
+      .container {
+        height: 120px;
+        width: 120px;
+        padding: 10px;
+        margin: 50px auto;
+        background: #ecf0f1;
+        position: relative;
+      }
+
+      #check-box {
+        visibility: hidden;
+      }
+
+      label {
+        width: 100px;
+        height: 15px;
+        background: #2c3e50;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
+
+      label::before {
+        width: 100px;
+        height: 15px;
+        background: #2c3e50;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -200%);
+      }
+
+      label::after {
+        width: 100px;
+        height: 15px;
+        background: #2c3e50;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
+
+      input:checked + label {
+        width: 0;
+      }
+      input:checked + label::before {
+        transform: rotate(45deg) translateX(-40px) translateY(30px);
+        transform: 1s;
+      }
+      input:checked + label::after {
+        transform: rotate(-45deg) translate(-30px,-40px);
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hamburger Animation</h1>
+    <div class="container">
+      <input type="checkbox" id="check-box" />
+      <label for="check-box"></label>
+    </div>
+  </body>
+</html>
